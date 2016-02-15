@@ -1,0 +1,120 @@
+.abstract{
+	width: 958px;
+	height: 340px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	margin:0 auto;
+	padding: 0 20px 20px 20px;
+}
+.line-title{
+	line-height: 60px;
+	margin-bottom:20px;
+	border-bottom: 1px solid #ddd;
+}
+.line-title .btn-download{
+	float: right;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	margin-top: 12px;
+	text-align: center;
+	background-color: #f60;
+	font-family: "Microsoft Yahei";
+	font-size: 16px;
+	color: #fff;
+}
+.line-title .btn-download:hover{
+	background-color: #f06000;
+}
+.line-title .btn-download .icon-download{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/icon_download.png);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.line-title h3{
+	font-size: 24px;
+}
+.side-pic{
+	width: 450px;
+	height: 260px;
+}
+.side-pic img{
+	display: block;
+	width:450px;
+	height: 260px;
+}
+.line-summary{
+	width: 490px;
+	height: 260px;
+}
+.fl{
+	float: left;
+}
+.fl .price{
+	text-align: left;
+}
+.fr{
+	float: right;
+}
+.fr .price{
+	text-align: right;
+}
+.fr .price .btn-book{
+	float: left;
+}
+.fl .price .btn-book{
+	float: right;
+}
+.price .btn-book{
+	width: 100px;
+	height:30px;
+	line-height: 30px;
+	background-color: #0290D8;
+	color: #fff;
+	text-align: center; 
+	margin-top: 10px;
+}
+.price .btn-book:hover{
+	background-color: #027EBD;
+}
+.line-summary .info{
+	width: 490px;
+	height: 168px;
+}
+.line-summary .price{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	border-bottom: 1px dotted #ddd;
+}
+.line-summary .price strong{
+	font-size: 24px;
+	color: #f60;
+}
+.line-summary .share{
+	padding-top:10px; 
+}
+.share .server{
+	width: 240px;
+}
+.fl .share .server{
+	float: left;
+}
+.fl .share .server a{
+	float: left;
+}
+.fr .share .server{
+	float: right;
+}
+.fr .share .server a{
+	float: right;
+}
+.fl .bdsharebuttonbox{
+	float: right;
+}
+.fr .bdsharebuttonbox{
+	float: left;
+}

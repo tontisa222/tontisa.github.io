@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>条件组 condition</title>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link rel="stylesheet" href="css/condition.css">
+<style>
+	body{ background-color: #f1f1f1; font-family: 'Microsoft Yahei'; }
+.aside-left{  position: fixed; top: 0; left: 0; float: left; width: 200px; padding:20px; border-right:1px solid #ccc; background-color: #fff; }
+.form-filter{ margin-bottom: 20px; }
+.form-filter .form-item{ height: 30px; line-height: 30px; margin-bottom: 5px; }
+.form-filter .form-item label{ float: left; width: 7em; height: 30px; line-height: 30px; text-align: right; }
+.form-filter .form-item input{ width: 100px; height: 18px; padding:2px;}
+
+.tab{ height: 30px; padding-left: 10px; border-bottom: 1px solid #ccc; margin-bottom: 20px;}
+.tab li{ float: left; height: 30px; line-height: 30px; padding:0 10px; background-color: #fff; color: #999; font-size: 13px; cursor: pointer; }
+.tab li:hover{ color: #666; }
+.tab li.active{ position: relative; top: 0; border:1px solid #ccc; border-radius: 3px 3px 0 0; border-bottom: 0; color: #333; }
+
+.abstract{ padding:10px; border:1px solid #FBEED5; border-radius: 3px; background-color: #FCF8E3; color: #c09853;}
+.abstract p{ margin-bottom: 5px; }
+
+.container{ margin-left: 240px; padding:20px;}
+.code{ display: block; width: 95%; padding:10px; border:1px solid #e1e1e8; border-radius:5px; margin:10px; background-color: #f7f7f9; font-size: 13px; line-height: 20px; color: #333; font-family: 'Microsoft Yahei';}
+</style>
+</head>
+<body>
+<div class="aside-left">
+	<ul class="tab" id="tab">
+		<li class="active" data-anchor="preview">preview</li>
+		<li data-anchor="html">html</li>
+		<li data-anchor="css">css</li>
+		<li data-anchor="js">js</li>
+	</ul>
+	
+</div>
+<div class="container">
+	<div class="condition-groups clearfix" id="preview">
+		<ul>
+			<li class="condition-content">
+				<div class="condition-hd">按月份：</div>
+				<div class="condition-ft">
+					<a href="#" class="show-multi">多选</a> <a href="#" class="show-more">更多<i class="triange-bottom"></i></a> <a href="#" class="show-less">收起<i class="triange-top"></i></a>
+				</div>
+				<div class="condition-bd">
+					<a href="#" class="all active">全部</a><a href="#" class="options">一月</a><a href="#" class="options">二月</a><a href="#" class="options">三月</a><a href="#" class="options">四月</a><a href="#" class="options">五月</a><a href="#" class="options">六月</a><a href="#" class="options">七月</a><a href="#" class="options">八月</a><a href="#" class="options">九月</a><a href="#" class="options">十月</a><a href="#" class="options">十一月</a><a href="#" class="options">十二月</a>
+
+				</div>
+				<span class="condition-btn clearfix"><a href="#" class="btn btn-true">确定</a><a href="#" class="btn btn-false">取消</a></span>
+			</li>
+			<li class="condition-content">
+				<div class="condition-hd">按星期：</div>
+				<div class="condition-ft">
+					<a href="#" class="show-multi">多选</a> <a href="#" class="show-more">更多<i class="triange-bottom"></i></a> <a href="#" class="show-less">收起<i class="triange-top"></i></a>
+				</div>
+				<div class="condition-bd">
+					<a href="#" class="all active">全部</a><a href="#" class="options">星期日</a><a href="#" class="options">星期一</a><a href="#" class="options">星期二</a><a href="#" class="options">星期三</a><a href="#" class="options">星期四</a><a href="#" class="options">星期五</a><a href="#" class="options">星期六</a>
+				</div>
+				<span class="condition-btn clearfix"><a href="#" class="btn btn-true">确定</a><a href="#" class="btn btn-false">取消</a></span>
+			</li>
+			<li class="condition-content">
+				<div class="condition-hd">起止城市：</div>
+				<div class="condition-ft">
+					<a href="#" class="show-multi">多选</a> <a href="#" class="show-more">更多<i class="triange-bottom"></i></a> <a href="#" class="show-less">收起<i class="triange-top"></i></a>
+				</div>
+				<div class="condition-bd">
+					<a href="#" class="all active">全部</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a>
+				</div>
+				<span class="condition-btn clearfix"><a href="#" class="btn btn-true">确定</a><a href="#" class="btn btn-false">取消</a></span>
+			</li>
+		</ul>
+		
+	</div>
+
+	<!--html document-->
+	<div id="html" class="hide">
+		<textarea cols="100" rows="25" class="code">
+<div class="condition-groups clearfix" id="preview">
+		<ul>
+			<li class="condition-content">
+				<div class="condition-hd">按月份：</div>
+				<div class="condition-ft">
+					<a href="#" class="show-multi">多选</a> <a href="#" class="show-more">更多<i class="triange-bottom"></i></a> <a href="#" class="show-less">收起<i class="triange-top"></i></a>
+				</div>
+				<div class="condition-bd">
+					<a href="#" class="active">全部</a><a href="#" class="options">一月</a><a href="#" class="options">二月</a><a href="#" class="options">三月</a><a href="#" class="options">四月</a><a href="#" class="options">五月</a><a href="#" class="options">六月</a><a href="#" class="options">七月</a><a href="#" class="options">八月</a><a href="#" class="options">九月</a><a href="#" class="options">十月</a><a href="#" class="options">十一月</a><a href="#" class="options">十二月</a>
+
+				</div>
+			</li>
+			<li class="condition-content">
+				<div class="condition-hd">按星期：</div>
+				<div class="condition-ft">
+					<a href="#" class="show-multi">多选</a> <a href="#" class="show-more">更多<i class="triange-bottom"></i></a> <a href="#" class="show-less">收起<i class="triange-top"></i></a>
+				</div>
+				<div class="condition-bd">
+					<a href="#" class="active">全部</a><a href="#" class="options">星期日</a><a href="#" class="options">星期一</a><a href="#" class="options">星期二</a><a href="#" class="options">星期三</a><a href="#" class="options">星期四</a><a href="#" class="options">星期五</a><a href="#" class="options">星期六</a>
+				</div>
+			</li>
+			<li class="condition-content">
+				<div class="condition-hd">起止城市：</div>
+				<div class="condition-ft">
+					<a href="#" class="show-multi">多选</a> <a href="#" class="show-more">更多<i class="triange-bottom"></i></a> <a href="#" class="show-less">收起<i class="triange-top"></i></a>
+				</div>
+				<div class="condition-bd">
+					<a href="#" class="active">全部</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a><a href="#" class="options">深圳起止</a>
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+		</textarea>	
+	</div>
+	<!--/html document-->
+
+	<!--css document-->
+	<div id="css" class="hide">
+		<textarea cols="100" rows="25" class="code">
+.condition-groups{
+	width: 980px;
+	padding: 10px;
+	margin:0 auto;
+	border: 1px solid #ccc;
+}
+.condition-content{
+	width: 980px;
+	height: 30px;
+	padding:10px 0;
+	border-bottom: 1px dotted #ccc;
+	overflow: hidden;
+}
+.condition-content:last-child{
+	border-bottom: none;
+}
+.condition-hd{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	float: left;
+	text-align: right;
+}
+.condition-bd{
+	font-size: 14px;
+	margin-left:80px;
+	margin-right: 80px;
+	overflow: hidden;
+}
+.condition-ft{
+	width: 90px;
+	line-height: 30px;
+	font-size: 12px;
+	float: right;
+}
+.condition-ft a{
+	display: block;
+	float: left;
+}
+.condition-bd a{
+	float: left;
+	padding: 0 10px;
+	margin:0 10px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.condition-bd a.active{
+	background-color: #50b400;
+	color: #fff;
+}
+a.show-multi{
+	border: 1px solid #ddd;
+	line-height: 20px;
+	padding: 0 5px;
+	margin:5px 15px 5px 0;
+}
+a.show-more{
+	display:block;
+}
+a.show-less{
+	display: none;
+}
+.triange-bottom{
+	float: right;
+	margin:12px 0 0 5px;
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+}
+.triange-top{
+	float: right;
+	margin:8px 0 0 5px;
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #333 transparent;
+}
+		</textarea>		
+	</div>
+	<!--/css document-->
+
+	<!--js document-->
+	<div id="js" class="hide">
+		<textarea cols="100" rows="25" class="code">
+// 点击更多和收起
+		$(".show-more").click(function(){
+			$(this).hide();
+			$(this).parent().siblings(".condition-btn").hide();
+			$(this).siblings(".show-less").show();
+			$(this).parents(".condition-content").css("height","auto");
+		});
+		$(".show-less").click(function(){
+			$(this).hide();
+			$(this).parent().siblings(".condition-btn").hide();
+			$(this).siblings(".show-more").show();
+			$(this).parents(".condition-content").css("height","30px");
+		});
+
+		// 点击多选
+		var fun1 = function(){
+				$(this).siblings().removeClass('active');
+				$(this).addClass('active');
+			};
+		var fun2 = function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			};
+		$("a.show-multi").toggle(function(){
+			$(this).parent().siblings('.condition-bd').find('a').unbind('click',fun2);
+			$(this).parent().siblings(".condition-bd").find(".options").unbind('click',fun1);
+			$(this).parent().siblings(".condition-btn").show();
+			$(this).addClass('on');
+			$(this).parents(".condition-content").css("height","auto");
+			$(this).parent().siblings(".condition-bd").find(".options").toggle(function(){
+				
+				$(this).siblings(".all").removeClass('active');
+				$(this).addClass('active');
+				return false;
+			},function(){
+				$(this).removeClass('active');
+				return false;
+			});
+		},function(){
+			$(this).parent().siblings('.condition-bd').find('a').bind('click',fun2);
+			$(this).parent().siblings(".condition-bd").find(".all").addClass('active').siblings().removeClass('active');
+			$(this).parent().siblings(".condition-btn").hide();
+			$(this).removeClass('on');
+			$(this).parents(".condition-content").css("height","30px");
+			$(this).parent().siblings(".condition-bd").find(".options").bind('click',fun1);
+		});
+
+		// 没加多选时，点击条件
+		$('.condition-bd a').bind('click',fun2);
+		</textarea>	
+	</div>
+	<!--/js document-->
+</div>
+</div>
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script>
+	$(function(){
+		var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+		$('.aside-left').height(clientHeight-40);
+		var tab = $('#tab'),
+			tabItm = tab.find('li');
+		tabItm.on('click',function(){
+			var anchor = $(this).attr('data-anchor');
+			$(this).addClass('active').siblings().removeClass('active');
+			$('#'+anchor).show().siblings().hide();
+		});
+
+		// 点击更多和收起
+		$(".show-more").click(function(){
+			$(this).hide();
+			$(this).parent().siblings(".condition-btn").hide();
+			$(this).siblings(".show-less").show();
+			$(this).parents(".condition-content").css("height","auto");
+		});
+		$(".show-less").click(function(){
+			$(this).hide();
+			$(this).parent().siblings(".condition-btn").hide();
+			$(this).siblings(".show-more").show();
+			$(this).parents(".condition-content").css("height","30px");
+		});
+
+		// 点击多选
+		var fun1 = function(){
+				$(this).siblings().removeClass('active');
+				$(this).addClass('active');
+			};
+		var fun2 = function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			};
+		$("a.show-multi").toggle(function(){
+			$(this).parent().siblings('.condition-bd').find('a').unbind('click',fun2);
+			$(this).parent().siblings(".condition-bd").find(".options").unbind('click',fun1);
+			$(this).parent().siblings(".condition-btn").show();
+			$(this).addClass('on');
+			$(this).parents(".condition-content").css("height","auto");
+			$(this).parent().siblings(".condition-bd").find(".options").toggle(function(){
+				
+				$(this).siblings(".all").removeClass('active');
+				$(this).addClass('active');
+				return false;
+			},function(){
+				$(this).removeClass('active');
+				return false;
+			});
+		},function(){
+			$(this).parent().siblings('.condition-bd').find('a').bind('click',fun2);
+			$(this).parent().siblings(".condition-bd").find(".all").addClass('active').siblings().removeClass('active');
+			$(this).parent().siblings(".condition-btn").hide();
+			$(this).removeClass('on');
+			$(this).parents(".condition-content").css("height","30px");
+			$(this).parent().siblings(".condition-bd").find(".options").bind('click',fun1);
+		});
+
+		// 没加多选时，点击条件
+		$('.condition-bd a').bind('click',fun2);
+	})
+</script>
+</body>
+</html>

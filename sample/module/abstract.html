@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>线路摘要 abstract</title>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link rel="stylesheet" href="css/abstract.css">
+<style>
+	body{ background-color: #f1f1f1; font-family: 'Microsoft Yahei'; }
+.aside-left{  position: fixed; top: 0; left: 0; float: left; width: 200px; padding:20px; border-right:1px solid #ccc; background-color: #fff; }
+.form-filter{ margin-bottom: 20px; }
+.form-filter .form-item{ height: 30px; line-height: 30px; margin-bottom: 5px; }
+.form-filter .form-item label{ float: left; width: 7em; height: 30px; line-height: 30px; text-align: right; }
+.form-filter .form-item input{ width: 100px; height: 18px; padding:2px;}
+
+.form-filter .form-item .radio{width:12px;height:12px;}
+
+.tab{ height: 30px; padding-left: 10px; border-bottom: 1px solid #ccc; margin-bottom: 20px;}
+.tab li{ float: left; height: 30px; line-height: 30px; padding:0 10px; background-color: #fff; color: #999; font-size: 13px; cursor: pointer; }
+.tab li:hover{ color: #666; }
+.tab li.active{ position: relative; top: 0; border:1px solid #ccc; border-radius: 3px 3px 0 0; border-bottom: 0; color: #333; }
+
+
+.container{ margin-left: 240px; padding:20px;}
+.code{ display: block; width: 95%; padding:10px; border:1px solid #e1e1e8; border-radius:5px; margin:10px; background-color: #f7f7f9; font-size: 13px; line-height: 20px; color: #333; font-family: 'Microsoft Yahei';}
+</style>
+</head>
+<body>
+<div class="aside-left">
+	<ul class="tab" id="tab">
+		<li class="active" data-anchor="preview">preview</li>
+		<li data-anchor="html">html</li>
+		<li data-anchor="css">css</li>
+		<li data-anchor="js">js</li>
+	</ul>
+	<form class="form-filter" action="">
+		<div class="form-item">
+			<label for="">图文排列方式：</label>
+			<select name="" id="column">
+				<option value="0">左图右文</option>
+				<option value="1">左文右图</option>
+				
+			</select>
+			<label for="">是否显示视频：</label>
+			<select name="" id="radio">
+				<option value="0">否</option>
+				<option value="1">是</option>
+				
+			</select>
+		</div>
+		
+		
+	</form>
+</div>
+<div class="container">
+	<div class="clearfix" id="preview">
+		<div class="abstract">
+			<div class="line-title">
+				<a href="javascript:void(0);" class="btn-download"><i class="icon-download"></i> 下载行程</a> <h3><首尔4晚5天半自助游>全程五花酒店 2天DIY</h3> 
+			</div>
+			<div class="side-pic fl">
+				<img id="pic" src="img/img.jpg" alt="xx线路图">
+				<embed id="video" src="http://player.youku.com/player.php/sid/XODMwNjE4OTky/v.swf" allowfullscreen="true" quality="high" width="450" height="260" align="middle" style="display:none;" wmode="transparent" allowscriptaccess="always" type="application/x-shockwave-flash">
+			</div>
+			<div class="line-summary fr">
+				<div class="info">
+					<ul>
+						<li>★ 深航直飞，早去晚回，全程连住首尔市内四花，携程自营品质团！</li>
+						<li>★ 两整日自由活动，血拼购物/偶遇明星，自己说了算！</li>
+						<li>★ 超值赠送韩式汗蒸幕+浪漫搞笑结婚秀+KITTY下午茶</li>
+						<li>★ 深航直飞，早去晚回，全程连住首尔市内四花，携程自营品质团！</li>
+						<li>★ 两整日自由活动，血拼购物/偶遇明星，自己说了算！</li>
+						<li>★ 超值赠送韩式汗蒸幕+浪漫搞笑结婚秀+KITTY下午茶</li>
+					</ul>
+				</div>
+				<div class="price">
+					<a href="javascript:void(0);" class="btn-book">立即预定</a>
+					同行价：￥<strong>4599.00</strong>/人起
+				</div>
+				<div class="share clearfix">
+					<div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1455414731472"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+					<div class="server">
+                        <a style="display:inline-block;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=977205675&amp;site=qq&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:977205675:52" alt="点击这里给我发消息" title="点击这里给我发消息"> </a>
+                        <a style="display:inline-block;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456&amp;site=qq&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:123456:52" alt="点击这里给我发消息" title="点击这里给我发消息"> </a>
+                        <a style="display:inline-block;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1297064954&amp;site=qq&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1297064954:52" alt="点击这里给我发消息" title="点击这里给我发消息"> </a>
+                        <a style="display:inline-block;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1297064963&amp;site=qq&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1297064963:52" alt="点击这里给我发消息" title="点击这里给我发消息"> </a>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<!--html document-->
+	<div id="html" class="hide">
+		<textarea cols="100" rows="25" class="code">
+<div class="abstract">
+			<div class="line-title">
+				<a href="javascript:void(0);" class="btn-download"><i class="icon-download"></i> 下载行程</a> <h3><首尔4晚5天半自助游>全程五花酒店 2天DIY</h3> 
+			</div>
+			<div class="side-pic fl">
+				<img src="img/img.jpg" alt="xx线路图">
+			</div>
+			<div class="line-summary fr">
+				<div class="info">
+					<ul>
+						<li>★ 深航直飞，早去晚回，全程连住首尔市内四花，携程自营品质团！</li>
+						<li>★ 两整日自由活动，血拼购物/偶遇明星，自己说了算！</li>
+						<li>★ 超值赠送韩式汗蒸幕+浪漫搞笑结婚秀+KITTY下午茶</li>
+						<li>★ 深航直飞，早去晚回，全程连住首尔市内四花，携程自营品质团！</li>
+						<li>★ 两整日自由活动，血拼购物/偶遇明星，自己说了算！</li>
+						<li>★ 超值赠送韩式汗蒸幕+浪漫搞笑结婚秀+KITTY下午茶</li>
+					</ul>
+				</div>
+				<div class="price">
+					<a href="javascript:void(0);" class="fr btn-book">立即预定</a>
+					同行价：￥<strong>4599.00</strong>/人起
+				</div>
+				<div class="share clearfix">
+					<div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1455414731472"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+				</div>
+			</div>
+		</div>
+		</textarea>	
+	</div>
+	<!--/html document-->
+
+	<!--css document-->
+	<div id="css" class="hide">
+		<textarea cols="100" rows="25" class="code">
+.abstract{
+	width: 958px;
+	height: 340px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	margin:0 auto;
+	padding: 0 20px 20px 20px;
+}
+.line-title{
+	line-height: 60px;
+	margin-bottom:20px;
+	border-bottom: 1px solid #ddd;
+}
+.line-title .btn-download{
+	float: right;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	margin-top: 12px;
+	text-align: center;
+	background-color: #f60;
+	font-family: "Microsoft Yahei";
+	font-size: 16px;
+	color: #fff;
+}
+.line-title .btn-download:hover{
+	background-color: #f06000;
+}
+.line-title .btn-download .icon-download{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/icon_download.png);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.line-title h3{
+	font-size: 24px;
+}
+.side-pic{
+	width: 450px;
+	height: 260px;
+}
+.side-pic img{
+	display: block;
+	width:450px;
+	height: 260px;
+}
+.line-summary{
+	width: 490px;
+	height: 260px;
+}
+.fl{
+	float: left;
+}
+.fl .price{
+	text-align: left;
+}
+.fr{
+	float: right;
+}
+.fr .price{
+	text-align: right;
+}
+.line-summary .info{
+	width: 490px;
+	height: 168px;
+}
+.line-summary .price{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	border-bottom: 1px dotted #ddd;
+}
+.line-summary .price strong{
+	font-size: 24px;
+	color: #f60;
+}
+.line-summary .share{
+	padding-top:10px; 
+}
+.fl .bdsharebuttonbox{
+	float: right;
+}
+.fr .bdsharebuttonbox{
+	float: left;
+}
+		</textarea>		
+	</div>
+	<!--/css document-->
+
+	<!--js document-->
+	<div id="js" class="hide">
+		<textarea cols="100" rows="25" class="code">
+
+		</textarea>	
+	</div>
+	<!--/js document-->
+</div>
+</div>
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script>
+	$(function(){
+		var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+		$('.aside-left').height(clientHeight-40);
+		var tab = $('#tab'),
+			tabItm = tab.find('li');
+		tabItm.on('click',function(){
+			var anchor = $(this).attr('data-anchor');
+			$(this).addClass('active').siblings().removeClass('active');
+			$('#'+anchor).show().siblings().hide();
+		});
+
+		// 改变图文排列方式
+		$("#column").change(function(){
+			var d = $("#column").val();
+			if(d == 1){
+				$(".side-pic").removeClass('fl').addClass('fr');
+				$(".line-summary").removeClass('fr').addClass('fl');
+			}else{
+				$(".side-pic").removeClass('fr').addClass('fl');
+				$(".line-summary").removeClass('fl').addClass('fr');
+			}
+		});
+
+		$("#radio").change(function(){
+			var r = $("#radio").val();
+			if(r == 1){
+				$("#pic").hide();
+				$("#video").show();
+			}else{
+				$("#video").hide();
+				$("#pic").show();
+			}
+		});;
+
+	})
+</script>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body>
+</html>
