@@ -52,7 +52,7 @@ input,textarea,select,button{ font-family: 'Microsoft Yahei'; }
 	table-layout: fixed;
 }
 
-.table thead,.table th{
+.table thead{
 	background-color:#EEEEEE;
 	color: #404040;
 }

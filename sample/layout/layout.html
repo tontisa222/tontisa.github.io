@@ -12,20 +12,25 @@
 	<p>1. 开发规范大部分参考<a class="link" href="http://nec.netease.com" target="_blank">网易NEC</a>规范标准，少部分为公司内部人员自己整理 <a class="link" href="/static/style/reset.css" target="_blank">reset.css</a></p>
 	<p>2. 不提供对IE6、IE7的支持，浏览器兼容性均为IE8+以上；</p>
 	<p>3. 提供的案例和结构主要针对同天下小强前台模板；</p>
-	<p>4. 提供的案例和结构主要针对同天下小强前台模板；</p>
-	<p>5. 编写html统一使用""双引号，javascript统一使用''单引号</p>
+	<p>4. 编写html统一使用""双引号，javascript统一使用''单引号</p>
+	<p>5. 统一语义化理解和命名，统一使用简写能减少css的文件大小</p>
 	<p>6. 一套好的规范约束，能大大提升团队在合作时的工作效率，请严格按照以下规范编写代码，或许你有更好的建议，欢迎大家一起讨论，为我们的规范舔砖加瓦；</p>
 </div>
 <div class="grid clearfix">
 	<div class="grid-sizer"></div>
 	<div class="col-4">
-		<h3>布局 layout</h3>
+		<h3>布局 layout (l-)</h3>
 		<table class="table" cellpadding="0" cellspacing="0" width="320">
 			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
+				<tr>
+					<th colspan="4">整体布局 layout</th>	
+				</tr>
+				<tr bgcolor="#f8f8f8">
+					<th width="60">语义</th>
+					<th>命名</th>
+					<th>简写</th>
+					<th>事例</th>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>
@@ -76,17 +81,17 @@
 					<td>sd</td>
 					<td>sd</td>
 				</tr>
-			</tbody>		
-		</table>
-	</div>
-	<div class="col-4">
-		<h3>包裹 wrapper</h3>
-		<table class="table" cellpadding="0" cellspacing="0" width="320">
+			</tbody>
 			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
+				<tr>
+					<th colspan="4">包裹类 wrapper</th>	
+				</tr>
+				<tr bgcolor="#f8f8f8">
+					<th width="60">语义</th>
+					<th>命名</th>
+					<th>简写</th>
+					<th>事例</th>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>
@@ -101,17 +106,17 @@
 					<td>in</td>
 					<td>in</td>
 				</tr>
-			</tbody>		
-		</table>
-	</div>
-	<div class="col-4">
-		<h3>区块 block</h3>
-		<table class="table" cellpadding="0" cellspacing="0" width="320">
+			</tbody>
 			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
+				<tr>
+					<th colspan="4">区块 block</th>	
+				</tr>
+				<tr bgcolor="#f8f8f8">
+					<th width="60">语义</th>
+					<th>命名</th>
+					<th>简写</th>
+					<th>事例</th>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>
@@ -138,17 +143,17 @@
 					<td>box</td>
 					<td>box</td>
 				</tr>
-			</tbody>		
-		</table>
-	</div>
-	<div class="col-4">
-		<h3>结构 structure</h3>
-		<table class="table" cellpadding="0" cellspacing="0" width="320">
+			</tbody>
 			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
+				<tr>
+					<th colspan="4">结构 structure</th>	
+				</tr>
+				<tr bgcolor="#f8f8f8">
+					<th width="60">语义</th>
+					<th>命名</th>
+					<th>简写</th>
+					<th>事例</th>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>
@@ -235,17 +240,17 @@
 					<td>span</td>
 					<td>span-6</td>
 				</tr>
-			</tbody>		
-		</table>
-	</div>
-	<div class="col-4">
-		<h3>主次 primary and secondary</h3>
-		<table class="table" cellpadding="0" cellspacing="0" width="320">
+			</tbody>
 			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
+				<tr>
+					<th colspan="4">主次 primary and secondary</th>	
+				</tr>
+				<tr bgcolor="#f8f8f8">
+					<th width="60">语义</th>
+					<th>命名</th>
+					<th>简写</th>
+					<th>事例</th>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>
@@ -284,54 +289,17 @@
 					<td>min</td>
 					<td>min</td>
 				</tr>
-			</tbody>		
-		</table>
-	</div>
-	<div class="col-4">
-		<h3>大小 size</h3>
-		<table class="table" cellpadding="0" cellspacing="0" width="320">
+			</tbody>
 			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
-			</thead>
-			<tbody>
 				<tr>
-					<td>大</td>
-					<td>large</td>
-					<td>lg</td>
-					<td>btn-lg</td>
+					<th colspan="4">等分 part</th>	
 				</tr>
-				<tr>
-					<td>中</td>
-					<td>middle</td>
-					<td>md</td>
-					<td>btn-md</td>
+				<tr bgcolor="#f8f8f8">
+					<th width="60">语义</th>
+					<th>命名</th>
+					<th>简写</th>
+					<th>事例</th>
 				</tr>
-				<tr>
-					<td>小</td>
-					<td>small</td>
-					<td>sm</td>
-					<td>btn-sm</td>
-				</tr>
-				<tr>
-					<td>迷你</td>
-					<td>mn</td>
-					<td>mn</td>
-					<td>btn-mn</td>
-				</tr>
-			</tbody>		
-		</table>
-	</div>
-	<div class="col-4">
-		<h3>等分 part</h3>
-		<table class="table" cellpadding="0" cellspacing="0" width="320">
-			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
 			</thead>
 			<tbody>
 				<tr>
@@ -361,17 +329,110 @@
 			</tbody>		
 		</table>
 	</div>
-
-	<div class="col-4">
-		<h3>交互模块 interaction</h3>
+	
+	<div class="col-4">	
+		<h3>模块 module(m-)</h3>
 		<table class="table" cellpadding="0" cellspacing="0" width="320">
 			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
+				<thead>
+					<tr>
+						<th colspan="4">常见模块</th>	
+					</tr>
+					<tr bgcolor="#f8f8f8">
+						<th width="60">语义</th>
+						<th>命名</th>
+						<th>简写</th>
+						<th>事例</th>
+					</tr>
+				</thead>
 			</thead>
 			<tbody>
+				<tr>
+					<td>导航条</td>
+					<td>navbar </td>
+					<td>navbar</td>
+					<td>navbar</td>
+				</tr>
+				<tr>
+					<td>导航</td>
+					<td>nav</td>
+					<td>nav</td>
+					<td>nav</td>
+				</tr>
+				<tr>
+					<td>主导航</td>
+					<td>main nav</td>
+					<td>mnav</td>
+					<td>mnav</td>
+				</tr>
+				<tr>
+					<td>子导航</td>
+					<td>sub nav</td>
+					<td>snav</td>
+					<td>snav</td>
+				</tr>
+				<tr>
+					<td>菜单</td>
+					<td>menu</td>
+					<td>menu</td>
+					<td>menu</td>
+				</tr>
+				<tr>
+					<td>子菜单</td>
+					<td>sub menu</td>
+					<td>smenu</td>
+					<td>smenu</td>
+				</tr>
+				<tr>
+					<td>面包屑</td>
+					<td>crumb</td>
+					<td>crm</td>
+					<td>crm</td>
+				</tr>
+				<tr>
+					<td>列表</td>
+					<td>list</td>
+					<td>lst</td>
+					<td>lst</td>
+				</tr>
+				<tr>
+					<td>表格</td>
+					<td>table</td>
+					<td>tbl</td>
+					<td>tbl</td>
+				</tr>
+				<tr>
+					<td>顶部栏</td>
+					<td>topbar</td>
+					<td>tpb</td>
+					<td>tpb</td>
+				</tr>
+				<tr>
+					<td>工具栏</td>
+					<td>toolbar</td>
+					<td>tb</td>
+					<td>tb</td>
+				</tr>
+				<tr>
+					<td>组</td>
+					<td>group</td>
+					<td>grp</td>
+					<td>grp</td>
+				</tr>
+			</tbody>
+			<thead>
+				<thead>
+					<tr>
+						<th colspan="4">交互模块 interaction</th>	
+					</tr>
+					<tr bgcolor="#f8f8f8">
+						<th width="60">语义</th>
+						<th>命名</th>
+						<th>简写</th>
+						<th>事例</th>
+					</tr>
+				</thead>
+				<tbody>
 				<tr>
 					<td>幻灯片</td>
 					<td>slide</td>
@@ -450,97 +511,13 @@
 					<td>stpb</td>
 					<td>stpb</td>
 				</tr>
-			</tbody>		
+			</tbody>
+			</thead>		
 		</table>
 	</div>
 
-	<div class="col-4">	
-		<h3>模块 module</h3>
-		<table class="table" cellpadding="0" cellspacing="0" width="320">
-			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td>导航条</td>
-					<td>navbar </td>
-					<td>navbar</td>
-					<td>navbar</td>
-				</tr>
-				<tr>
-					<td>导航</td>
-					<td>nav</td>
-					<td>nav</td>
-					<td>nav</td>
-				</tr>
-				<tr>
-					<td>主导航</td>
-					<td>main nav</td>
-					<td>mnav</td>
-					<td>mnav</td>
-				</tr>
-				<tr>
-					<td>子导航</td>
-					<td>sub nav</td>
-					<td>snav</td>
-					<td>snav</td>
-				</tr>
-				<tr>
-					<td>菜单</td>
-					<td>menu</td>
-					<td>menu</td>
-					<td>menu</td>
-				</tr>
-				<tr>
-					<td>子菜单</td>
-					<td>sub menu</td>
-					<td>smenu</td>
-					<td>smenu</td>
-				</tr>
-				<tr>
-					<td>面包屑</td>
-					<td>crumb</td>
-					<td>crm</td>
-					<td>crm</td>
-				</tr>
-				<tr>
-					<td>列表</td>
-					<td>list</td>
-					<td>lst</td>
-					<td>lst</td>
-				</tr>
-				<tr>
-					<td>表格</td>
-					<td>table</td>
-					<td>tbl</td>
-					<td>tbl</td>
-				</tr>
-				<tr>
-					<td>顶部栏</td>
-					<td>topbar</td>
-					<td>tpb</td>
-					<td>tpb</td>
-				</tr>
-				<tr>
-					<td>工具栏</td>
-					<td>toolbar</td>
-					<td>tb</td>
-					<td>tb</td>
-				</tr>
-				<tr>
-					<td>组</td>
-					<td>group</td>
-					<td>grp</td>
-					<td>grp</td>
-				</tr>
-			</tbody>		
-		</table>
-	</div>
 	<div class="col-4">
-		<h3>单元 unit</h3>
+		<h3>单元 unit(u-)</h3>
 		<table class="table" cellpadding="0" cellspacing="0" width="320">
 			<thead>
 				<th width="60">语义</th>
@@ -628,15 +605,125 @@
 					<td>num</td>
 				</tr>
 				<tr>
-					<td>数字</td>
-					<td>number</td>
-					<td>num</td>
-					<td>num</td>
+					<td>图标</td>
+					<td>icon</td>
+					<td>ico</td>
+					<td>ico</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 	
+	<div class="col-4">
+		<h3>状态 status</h3>
+		<table class="table" cellpadding="0" cellspacing="0" width="320">
+			<thead>
+				<th width="60">语义</th>
+				<th>命名</th>
+				<th>简写</th>
+				<th>事例</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>悬停</td>
+					<td>hover</td>
+					<td>hov</td>
+					<td>hov</td>
+				</tr>
+				<tr>
+					<td>被点击</td>
+					<td>active</td>
+					<td>act</td>
+					<td>act</td>
+				</tr>
+				<tr>
+					<td>已访问</td>
+					<td>visited</td>
+					<td>vis</td>
+					<td>vis</td>
+				</tr>
+				<tr>
+					<td>当前</td>
+					<td>current</td>
+					<td>crt</td>
+					<td>crt</td>
+				</tr>
+				<tr>
+					<td>选中</td>
+					<td>selected</td>
+					<td>sel</td>
+					<td>sel</td>
+				</tr>
+				<tr>
+					<td>选中</td>
+					<td>checked</td>
+					<td>chk</td>
+					<td>chk</td>
+				</tr>
+				<tr>
+					<td>不可用</td>
+					<td>disabled</td>
+					<td>dis</td>
+					<td>dis</td>
+				</tr>
+				<tr>
+					<td>开</td>
+					<td>on</td>
+					<td>on</td>
+					<td>on</td>
+				</tr>
+				<tr>
+					<td>关</td>
+					<td>off</td>
+					<td>off</td>
+					<td>off</td>
+				</tr>
+				<tr>
+					<td>显示</td>
+					<td>show</td>
+					<td>show</td>
+					<td>show</td>
+				</tr>
+				<tr>
+					<td>隐藏</td>
+					<td>hide</td>
+					<td>hide</td>
+					<td>hide</td>
+				</tr>
+				<tr>
+					<td>打开</td>
+					<td>open</td>
+					<td>open</td>
+					<td>open</td>
+				</tr>
+				<tr>
+					<td>错误</td>
+					<td>error</td>
+					<td>err</td>
+					<td>err</td>
+				</tr>
+				<tr>
+					<td>警告</td>
+					<td>warn</td>
+					<td>warn</td>
+					<td>warn</td>
+				</tr>
+				<tr>
+					<td>成功</td>
+					<td>success</td>
+					<td>suc</td>
+					<td>suc</td>
+				</tr>
+				<tr>
+					<td>失败</td>
+					<td>fail</td>
+					<td>fail</td>
+					<td>fail</td>
+				</tr>
+			</tbody>		
+		</table>
+	</div>
+
 	<div class="col-4">
 		<h3>语义化 other</h3>
 		<table class="table" cellpadding="0" cellspacing="0" width="320">
@@ -764,117 +851,7 @@
 			</tbody>
 		</table>
 	</div>
-
-	<div class="col-4">
-		<h3>状态 status</h3>
-		<table class="table" cellpadding="0" cellspacing="0" width="320">
-			<thead>
-				<th width="60">语义</th>
-				<th>命名</th>
-				<th>简写</th>
-				<th>事例</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td>悬停</td>
-					<td>hover</td>
-					<td>hov</td>
-					<td>hov</td>
-				</tr>
-				<tr>
-					<td>被点击</td>
-					<td>active</td>
-					<td>act</td>
-					<td>act</td>
-				</tr>
-				<tr>
-					<td>已访问</td>
-					<td>visited</td>
-					<td>vis</td>
-					<td>vis</td>
-				</tr>
-				<tr>
-					<td>当前</td>
-					<td>current</td>
-					<td>crt</td>
-					<td>crt</td>
-				</tr>
-				<tr>
-					<td>选中</td>
-					<td>selected</td>
-					<td>sel</td>
-					<td>sel</td>
-				</tr>
-				<tr>
-					<td>选中</td>
-					<td>checked</td>
-					<td>chk</td>
-					<td>chk</td>
-				</tr>
-				<tr>
-					<td>不可用</td>
-					<td>disabled</td>
-					<td>dis</td>
-					<td>dis</td>
-				</tr>
-				<tr>
-					<td>开</td>
-					<td>on</td>
-					<td>on</td>
-					<td>on</td>
-				</tr>
-				<tr>
-					<td>关</td>
-					<td>off</td>
-					<td>off</td>
-					<td>off</td>
-				</tr>
-				<tr>
-					<td>显示</td>
-					<td>show</td>
-					<td>show</td>
-					<td>show</td>
-				</tr>
-				<tr>
-					<td>隐藏</td>
-					<td>hide</td>
-					<td>hide</td>
-					<td>hide</td>
-				</tr>
-				<tr>
-					<td>打开</td>
-					<td>open</td>
-					<td>open</td>
-					<td>open</td>
-				</tr>
-				<tr>
-					<td>错误</td>
-					<td>error</td>
-					<td>err</td>
-					<td>err</td>
-				</tr>
-				<tr>
-					<td>警告</td>
-					<td>warn</td>
-					<td>warn</td>
-					<td>warn</td>
-				</tr>
-				<tr>
-					<td>成功</td>
-					<td>success</td>
-					<td>suc</td>
-					<td>suc</td>
-				</tr>
-				<tr>
-					<td>失败</td>
-					<td>fail</td>
-					<td>fail</td>
-					<td>fail</td>
-				</tr>
-			</tbody>		
-		</table>
-	</div>
-
+	
 	<div class="col-4">
 		<h3>特殊符号 symbol</h3>
 		<table class="table" cellpadding="0" cellspacing="0" width="320">
