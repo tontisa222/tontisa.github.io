@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>幻灯片02</title>
+</head>
+<link href="../../static/style/reset.css" rel="stylesheet">
+<link href="css/slide-public.css" rel="stylesheet">
+<style>
+
+.slide { 
+	position: relative; 
+	width:1000px; 
+	height:460px; 
+	overflow: hidden;
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+
+.slide .pic a { 
+	width:100%; 
+	height:460px; 
+	display: block; 
+	}
+.slide .hd { 
+	overflow:hidden; 
+	zoom:1; 
+	position:absolute; 
+	bottom:5px; 
+	right:50%; 
+	margin-right:-50px; 
+	z-index:3}
+.slide .hd li{
+	float:left; 
+	line-height:15px; 
+	text-align:center; 
+	font-size:12px; 
+	width:25px; 
+	height:10px; 
+	cursor:pointer; 
+	overflow:hidden; 
+	background:#919191; 
+	margin-left:4px; 
+	filter:alpha(opacity=80); 
+	opacity:.8; 
+	-webkit-transition:All .5s ease;
+	-moz-transition:All .5s ease;
+	-o-transition:All .5s ease 
+	}
+.slide .hd .on{ 
+	background:#fff; 
+	filter:alpha(opacity=100);
+	opacity:1;   
+	}
+
+.slide .prev,
+.slide .next { 
+	width:45px; 
+	height:99px; 
+	position:absolute; 
+	top:91px; z-index:3; 
+	filter:alpha(opacity=20); 
+	-moz-opacity:.2; opacity:.2; 
+	-webkit-transition:All .5s ease;
+	-moz-transition:All .5s ease;
+	-o-transition:All .5s ease
+	}
+.slide .prev { 
+	background-image:url(img/index.png); 
+	background-position:-112px 0; 
+	left:50px; top:175px; 
+	}
+.slide .next { 
+	background-image:url(img/index.png); 
+	background-position:-158px 0; 
+	right:50px; top:175px; 
+	}
+.slide .prev:hover,
+.slide .next:hover { 
+	filter:alpha(opacity=60); 
+	-moz-opacity:.6; 
+	opacity:.6 
+	}
+
+	</style>
+
+
+
+<body>
+<div class="left-contrl">
+    <ul class="tab" id="tab">
+        <li class="active" data-anchor="preview">preview</li>
+        <li data-anchor="html">html</li>
+        <li data-anchor="css">css</li>
+        <li data-anchor="js">js</li>
+    </ul>
+    <form class="form-filter" action="">
+    <div class="form-item">
+    <label for="">屏幕：</label>
+        <select name="" id="column">
+            <option value="0">全屏</option>
+            <option value="1">1000屏</option>
+            
+        </select>
+    </div>
+    
+    
+    </form>
+</div>
+<!--------->
+<div class="right-content">
+	<div id="preview">
+        <div class="slide slide-full" id="slide" style="margin:0 auto">
+            <ul class="pic">
+                    <li><a href="#" target="_blank" style=" background:url(img/11.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/12.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/13.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/11.jpg) center center no-repeat;"></a></li>
+            </ul>
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+            <ul class="hd">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="html" class="hide">
+    	<textarea cols="100" rows="25" class="code">
+        <div class="slide slide-full" id="slide" style="margin:0 auto">
+            <ul class="pic">
+                    <li><a href="#" target="_blank" style=" background:url(img/11.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/12.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/13.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/11.jpg) center center no-repeat;"></a></li>
+            </ul>
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+            <ul class="hd">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </textarea>	
+    </div>
+    
+    <div id="css" class="hide">
+		<textarea cols="100" rows="25" class="code">
+.slide { 
+	position: relative; 
+	width:1000px; 
+	height:460px; 
+	overflow: hidden;
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+
+.slide .pic a { 
+	width:100%; 
+	height:460px; 
+	display: block; 
+	}
+.slide .hd { 
+	overflow:hidden; 
+	zoom:1; 
+	position:absolute; 
+	bottom:5px; 
+	right:50%; 
+	margin-right:-50px; 
+	z-index:3}
+.slide .hd li{
+	float:left; 
+	line-height:15px; 
+	text-align:center; 
+	font-size:12px; 
+	width:25px; 
+	height:10px; 
+	cursor:pointer; 
+	overflow:hidden; 
+	background:#919191; 
+	margin-left:4px; 
+	filter:alpha(opacity=80); 
+	opacity:.8; 
+	-webkit-transition:All .5s ease;
+	-moz-transition:All .5s ease;
+	-o-transition:All .5s ease 
+	}
+.slide .hd .on{ 
+	background:#fff; 
+	filter:alpha(opacity=100);
+	opacity:1;   
+	}
+
+.slide .prev,
+.slide .next { 
+	width:45px; 
+	height:99px; 
+	position:absolute; 
+	top:91px; z-index:3; 
+	filter:alpha(opacity=20); 
+	-moz-opacity:.2; opacity:.2; 
+	-webkit-transition:All .5s ease;
+	-moz-transition:All .5s ease;
+	-o-transition:All .5s ease
+	}
+.slide .prev { 
+	background-image:url(img/index.png); 
+	background-position:-112px 0; 
+	left:50px; top:175px; 
+	}
+.slide .next { 
+	background-image:url(img/index.png); 
+	background-position:-158px 0; 
+	right:50px; top:175px; 
+	}
+.slide .prev:hover,
+.slide .next:hover { 
+	filter:alpha(opacity=60); 
+	-moz-opacity:.6; 
+	opacity:.6 
+	}
+
+		</textarea>		
+	</div>
+    
+    <div id="js" class="hide">
+		<textarea cols="100" rows="25" class="code">
+        
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+	jQuery(".slide").slide({ mainCell:".pic",effect:"left", autoPlay:true, delayTime:300});
+</script>
+
+		</textarea>	
+	</div>
+</div>
+
+</body>
+
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    jQuery(".slide").slide({ mainCell:".pic",effect:"left", autoPlay:true, delayTime:300});
+</script>
+<script>
+$(function(){
+	var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+	$('.aside-left').height(clientHeight-40);
+	var tab = $('#tab'),
+		tabItm = tab.find('li');
+	tabItm.on('click',function(){
+		var anchor = $(this).attr('data-anchor');
+		$(this).addClass('active').siblings().removeClass('active');
+		$('#'+anchor).show().siblings().hide();
+	});
+/*------*/
+	var ele = $("#slide");
+	var pos = ele.offset().top;
+
+	var sec = function(index){
+		if(index == 0){
+			return 0;
+		}else{
+			return $(".section-" + index).offset().top - 2*$("#slide").height() + $(".section-" + index).height();
+		}
+	}
+	
+	var direction = function(d){
+		if(d == 1){
+			$("#slide").removeClass("slide-full");
+			/*$("#nav_box").addClass("vertical");*/
+		}else{
+			$("#slide").addClass("slide-full");
+		}
+	};
+	$("#column").change(function(){
+		var d = $("#column").val();
+		console.log(d);
+		direction(d);
+	});
+	
+	})
+</script>
+
+</html>

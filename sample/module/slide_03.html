@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>幻灯片03</title>
+</head>
+<link href="../../static/style/reset.css" rel="stylesheet">
+<link href="css/slide-public.css" rel="stylesheet">
+
+<style>
+	
+.slide { 
+	position: relative; 
+	width: 1000px; 
+	height: 460px; 
+	overflow: hidden; 
+	font: 12px/1.5 Verdana, Geneva, sans-serif; 
+	text-align: left; 
+	background: white; 
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+.slide .pic a { 
+	width: 100%; 
+	height: 460px; 
+	display: block; 
+	}
+.slide .txt-bg { 
+	position: absolute; 
+	bottom: 0; 
+	z-index: 1; 
+	height: 36px; 
+	width:100%;  
+	background: #333; 
+	filter: alpha(opacity=40); 
+	opacity: 0.4; 
+	overflow: hidden; 
+	}
+.slide .txt { 
+	position: absolute; 
+	bottom: 0; 
+	z-index: 2; 
+	height: 36px; 
+	width:1000px; 
+	left:50%; 
+	margin-left:-500px; 
+	overflow: hidden; 
+	}
+.slide .txt li{ 
+	height:36px; 
+	line-height:36px; 
+	position:absolute; 
+	bottom:-36px;
+	}
+.slide .txt li a{ 
+	display: block; 
+	color: white; 
+	padding: 0 0 0 10px; 
+	font-size: 12px; 
+	font-weight: bold; 
+	text-decoration: none; 
+	}
+.slide .num-list{
+	position: absolute; 
+	z-index: 3; 
+	bottom: 8px; 
+	right: 50%; 
+	margin-right:-500px; 
+	width:1000px;
+	}
+.slide .num { 
+	float:right; 
+	margin-right:10px;
+	}
+.slide .num li{ 
+	float: left; 
+	position: relative; 
+	width: 18px; 
+	height: 15px; 
+	line-height: 15px; 
+	overflow: hidden; 
+	text-align: center; 
+	margin-right: 2px; 
+	cursor: pointer; 
+	}
+.slide .num li a,.focusBox .num li span { 
+	position: absolute; 
+	z-index: 2; 
+	display: block; 
+	color: white; 
+	width: 100%; 
+	height: 100%; 
+	top: 0; left: 0; 
+	text-decoration: none; 
+	}
+.slide .num li span { 
+	z-index: 1; 
+	background: black; 
+	filter: alpha(opacity=50); 
+	opacity: 0.5; 
+	}
+.slide .num li.on a,.focusBox .num a:hover{ 
+	background:#f60;  
+	}
+</style>
+
+
+
+<body>
+
+<div class="left-contrl">
+    <ul class="tab" id="tab">
+        <li class="active" data-anchor="preview">preview</li>
+        <li data-anchor="html">html</li>
+        <li data-anchor="css">css</li>
+        <li data-anchor="js">js</li>
+    </ul>
+    <form class="form-filter" action="">
+    <div class="form-item">
+    <label for="">屏幕：</label>
+        <select name="" id="column">
+            <option value="0">全屏</option>
+            <option value="1">1000屏</option>
+            
+        </select>
+    </div>
+    
+    
+    </form>
+</div>
+<!--------->
+<div class="right-content">
+	<div id="preview">
+        <div class="slide slide-full" id="slide" style="margin:0 auto">
+            <ul class="pic">
+                    <li><a href="#" target="_blank" style=" background:url(img/11.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/12.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/13.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/14.jpg) center center no-repeat;"></a></li>
+            </ul>
+            <div class="txt-bg"></div>
+            <div class="txt">
+                <ul>
+                    <li><a href="#">SuperSlide01美女福利图Quiet</a></li>
+                    <li><a href="#">SuperSlide02美女福利图DoubleLi</a></li>
+                    <li><a href="#">SuperSlide03美女福利图爱的练习曲</a></li>
+                    <li><a href="#">SuperSlide04美女福利图夜莺</a></li>
+                </ul>
+            </div>
+            
+            <div class="num-list">
+                <ul class="num">
+                    <li><a>1</a><span></span></li>
+                    <li><a>2</a><span></span></li>
+                    <li><a>3</a><span></span></li>
+                    <li><a>4</a><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="html" class="hide">
+    	<textarea cols="100" rows="25" class="code">
+        <div class="slide slide-full" id="slide" style="margin:0 auto">
+            <ul class="pic">
+                    <li><a href="#" target="_blank" style=" background:url(img/11.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/12.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/13.jpg) center center no-repeat;"></a></li>
+                    <li><a href="#" target="_blank" style=" background:url(img/14.jpg) center center no-repeat;"></a></li>
+            </ul>
+            <div class="txt-bg"></div>
+            <div class="txt">
+                <ul>
+                    <li><a href="#">SuperSlide01美女福利图Quiet</a></li>
+                    <li><a href="#">SuperSlide02美女福利图DoubleLi</a></li>
+                    <li><a href="#">SuperSlide03美女福利图爱的练习曲</a></li>
+                    <li><a href="#">SuperSlide04美女福利图夜莺</a></li>
+                </ul>
+            </div>
+            
+            <div class="num-list">
+                <ul class="num">
+                    <li><a>1</a><span></span></li>
+                    <li><a>2</a><span></span></li>
+                    <li><a>3</a><span></span></li>
+                    <li><a>4</a><span></span></li>
+                </ul>
+            </div>
+        </div>
+
+        </textarea>	
+    </div>
+    
+    <div id="css" class="hide">
+		<textarea cols="100" rows="25" class="code">
+.slide { 
+	position: relative; 
+	width: 1000px; 
+	height: 460px; 
+	overflow: hidden; 
+	font: 12px/1.5 Verdana, Geneva, sans-serif; 
+	text-align: left; 
+	background: white; 
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+.slide .pic a { 
+	width: 100%; 
+	height: 460px; 
+	display: block; 
+	}
+.slide .txt-bg { 
+	position: absolute; 
+	bottom: 0; 
+	z-index: 1; 
+	height: 36px; 
+	width:100%;  
+	background: #333; 
+	filter: alpha(opacity=40); 
+	opacity: 0.4; 
+	overflow: hidden; 
+	}
+.slide .txt { 
+	position: absolute; 
+	bottom: 0; 
+	z-index: 2; 
+	height: 36px; 
+	width:1000px; 
+	left:50%; 
+	margin-left:-500px; 
+	overflow: hidden; 
+	}
+.slide .txt li{ 
+	height:36px; 
+	line-height:36px; 
+	position:absolute; 
+	bottom:-36px;
+	}
+.slide .txt li a{ 
+	display: block; 
+	color: white; 
+	padding: 0 0 0 10px; 
+	font-size: 12px; 
+	font-weight: bold; 
+	text-decoration: none; 
+	}
+.slide .num-list{
+	position: absolute; 
+	z-index: 3; 
+	bottom: 8px; 
+	right: 50%; 
+	margin-right:-500px; 
+	width:1000px;
+	}
+.slide .num { 
+	float:right; 
+	margin-right:10px;
+	}
+.slide .num li{ 
+	float: left; 
+	position: relative; 
+	width: 18px; 
+	height: 15px; 
+	line-height: 15px; 
+	overflow: hidden; 
+	text-align: center; 
+	margin-right: 2px; 
+	cursor: pointer; 
+	}
+.slide .num li a,.focusBox .num li span { 
+	position: absolute; 
+	z-index: 2; 
+	display: block; 
+	color: white; 
+	width: 100%; 
+	height: 100%; 
+	top: 0; left: 0; 
+	text-decoration: none; 
+	}
+.slide .num li span { 
+	z-index: 1; 
+	background: black; 
+	filter: alpha(opacity=50); 
+	opacity: 0.5; 
+	}
+.slide .num li.on a,.focusBox .num a:hover{ 
+	background:#f60;  
+	}
+
+
+		</textarea>		
+
+	</div>
+    
+    <div id="js" class="hide">
+		<textarea cols="100" rows="25" class="code">
+        
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+	jQuery(".slide").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"mouseover",
+		//下面startFun代码用于控制文字上下切换
+		startFun:function(i){
+			 jQuery(".slide .txt li").eq(i).animate({"bottom":0}).siblings().animate({"bottom":-36});
+		}
+	});
+</script>
+
+		</textarea>	
+	</div>
+</div>
+
+
+</body>
+
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+	jQuery(".slide").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"mouseover",
+		//下面startFun代码用于控制文字上下切换
+		startFun:function(i){
+			 jQuery(".slide .txt li").eq(i).animate({"bottom":0}).siblings().animate({"bottom":-36});
+		}
+	});
+</script>
+<script>
+$(function(){
+	var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+	$('.aside-left').height(clientHeight-40);
+	var tab = $('#tab'),
+		tabItm = tab.find('li');
+	tabItm.on('click',function(){
+		var anchor = $(this).attr('data-anchor');
+		$(this).addClass('active').siblings().removeClass('active');
+		$('#'+anchor).show().siblings().hide();
+	});
+/*------*/
+	var ele = $("#slide");
+	var pos = ele.offset().top;
+
+	var sec = function(index){
+		if(index == 0){
+			return 0;
+		}else{
+			return $(".section-" + index).offset().top - 2*$("#slide").height() + $(".section-" + index).height();
+		}
+	}
+	
+	var direction = function(d){
+		if(d == 1){
+			$("#slide").removeClass("slide-full");
+			/*$("#nav_box").addClass("vertical");*/
+		}else{
+			$("#slide").addClass("slide-full");
+		}
+	};
+	$("#column").change(function(){
+		var d = $("#column").val();
+		console.log(d);
+		direction(d);
+	});
+	
+	})
+</script>
+
+</html>

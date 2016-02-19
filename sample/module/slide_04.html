@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>幻灯片04</title>
+</head>
+<link href="../../static/style/reset.css" rel="stylesheet">
+<link href="css/slide-public.css" rel="stylesheet">
+<style>
+.slide{
+	width:1000px;
+	height:460px;
+	overflow:hidden;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+.slide .slide-bd{
+	position:relative;
+	}
+.slide .slide-bd ul{
+	width:100%;
+	}
+.slide .slide-bd li{
+	width:100%;
+	height:460px;
+	}
+.slide .slide-bd ul li a{
+	width:100%;
+	height:460px;
+	display:block;
+	}
+	
+.slide .slide-hd{
+	width:1000px;
+	position:absolute;
+	left:50%;
+	bottom:15px;
+	margin-left:-500px;
+	}
+.slide .slide-hd ul{
+	float:right;
+	}
+.slide .slide-hd li{
+	float:left;
+	margin:0 5px;
+	cursor:pointer;
+	}
+.slide .slide-hd li img{
+	width:80px;
+	height:41px;
+	display:block;
+	border:2px solid #fff;
+	filter: alpha(opacity=70); 
+	opacity: 0.7; 
+	}
+.slide .slide-hd ul .on img{
+	border:2px solid #0099ff;
+	filter: alpha(opacity=100); 
+	opacity: 1; 
+
+	}
+</style>
+
+<body>
+
+<div class="left-contrl">
+    <ul class="tab" id="tab">
+        <li class="active" data-anchor="preview">preview</li>
+        <li data-anchor="html">html</li>
+        <li data-anchor="css">css</li>
+        <li data-anchor="js">js</li>
+    </ul>
+    <form class="form-filter" action="">
+    <div class="form-item">
+    <label for="">屏幕：</label>
+        <select name="" id="column">
+            <option value="0">全屏</option>
+            <option value="1">1000屏</option>
+            
+        </select>
+    </div>
+    
+    
+    </form>
+</div>
+<!--------->
+<div class="right-content">
+	<div id="preview">
+        <div class="slide slide-full" id="slide">
+        
+            <div class="slide-bd">
+                <ul>
+                    <li><a href="#" style=" background:url(img/11.jpg) center no-repeat;">1</a></li>
+                    <li><a href="#" style=" background:url(img/12.jpg) center no-repeat;">2</a></li>
+                    <li><a href="#" style=" background:url(img/13.jpg) center no-repeat;">3</a></li>
+                    <li><a href="#" style=" background:url(img/14.jpg) center no-repeat;">4</a></li>
+                </ul>
+            </div>
+            
+            <div class="slide-hd">
+                <ul class="clearfix">
+                    <li><img src="img/11.jpg"></li>
+                    <li><img src="img/12.jpg"></li>
+                    <li><img src="img/13.jpg"></li>
+                    <li><img src="img/14.jpg"></li>
+                </ul>
+            </div>
+        
+        </div>
+    </div>
+    
+    <div id="html" class="hide">
+    	<textarea cols="100" rows="25" class="code">
+        <div class="slide slide-full" id="slide">
+        
+            <div class="slide-bd">
+                <ul>
+                    <li><a href="#" style=" background:url(img/11.jpg) center no-repeat;">1</a></li>
+                    <li><a href="#" style=" background:url(img/12.jpg) center no-repeat;">2</a></li>
+                    <li><a href="#" style=" background:url(img/13.jpg) center no-repeat;">3</a></li>
+                    <li><a href="#" style=" background:url(img/14.jpg) center no-repeat;">4</a></li>
+                </ul>
+            </div>
+            
+            <div class="slide-hd">
+                <ul class="clearfix">
+                    <li><img src="img/11.jpg"></li>
+                    <li><img src="img/12.jpg"></li>
+                    <li><img src="img/13.jpg"></li>
+                    <li><img src="img/14.jpg"></li>
+                </ul>
+            </div>
+        
+        </div>
+
+        </textarea>	
+    </div>
+    
+    <div id="css" class="hide">
+		<textarea cols="100" rows="25" class="code">
+.slide{
+	width:1000px;
+	height:460px;
+	overflow:hidden;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+.slide .slide-bd{
+	position:relative;
+	}
+.slide .slide-bd ul{
+	width:100%;
+	}
+.slide .slide-bd li{
+	width:100%;
+	height:460px;
+	}
+.slide .slide-bd ul li a{
+	width:100%;
+	height:460px;
+	display:block;
+	}
+	
+.slide .slide-hd{
+	width:1000px;
+	position:absolute;
+	left:50%;
+	bottom:15px;
+	margin-left:-500px;
+	}
+.slide .slide-hd ul{
+	float:right;
+	}
+.slide .slide-hd li{
+	float:left;
+	margin:0 5px;
+	cursor:pointer;
+	}
+.slide .slide-hd li img{
+	width:80px;
+	height:41px;
+	display:block;
+	border:2px solid #fff;
+	filter: alpha(opacity=70); 
+	opacity: 0.7; 
+	}
+.slide .slide-hd ul .on img{
+	border:2px solid #0099ff;
+		filter: alpha(opacity=100); 
+	opacity: 1; 
+
+	}
+
+		</textarea>		
+	</div>
+    
+    <div id="js" class="hide">
+		<textarea cols="100" rows="25" class="code">
+        
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+	jQuery("#slide").slide({ titCell:".slide-hd li", mainCell:".slide-bd ul", effect:"fold",  autoPlay:true, delayTime:700 });
+</script>
+
+		</textarea>	
+	</div>
+</div>
+
+</body>
+
+
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+	jQuery("#slide").slide({ titCell:".slide-hd li", mainCell:".slide-bd ul", effect:"fold",  autoPlay:true, delayTime:700 });
+</script>
+<script>
+$(function(){
+	var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+	$('.aside-left').height(clientHeight-40);
+	var tab = $('#tab'),
+		tabItm = tab.find('li');
+	tabItm.on('click',function(){
+		var anchor = $(this).attr('data-anchor');
+		$(this).addClass('active').siblings().removeClass('active');
+		$('#'+anchor).show().siblings().hide();
+	});
+/*------*/
+	var ele = $("#slide");
+	var pos = ele.offset().top;
+
+	var sec = function(index){
+		if(index == 0){
+			return 0;
+		}else{
+			return $(".section-" + index).offset().top - 2*$("#slide").height() + $(".section-" + index).height();
+		}
+	}
+	
+	var direction = function(d){
+		if(d == 1){
+			$("#slide").removeClass("slide-full");
+			/*$("#nav_box").addClass("vertical");*/
+		}else{
+			$("#slide").addClass("slide-full");
+		}
+	};
+	$("#column").change(function(){
+		var d = $("#column").val();
+		console.log(d);
+		direction(d);
+	});
+	
+	})
+</script>
+
+</html>

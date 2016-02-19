@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>幻灯片08</title>
+</head>
+<link href="../../static/style/reset.css" rel="stylesheet">
+<link href="css/slide-public.css" rel="stylesheet">
+<style>
+.slide{
+	width:1000px;
+	height:460px;
+	overflow:hidden;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+.slide .slide-bd{
+	position:relative;
+	}
+.slide .slide-bd ul{
+	width:100%;
+	}
+.slide .slide-bd li{
+	width:100%;
+	height:460px;
+	}
+.slide .slide-bd ul li a{
+	width:100%;
+	height:460px;
+	display:block;
+	}
+	
+.slide .slide-bg{
+	width:100%;
+	background-color:rgba(0,0,0,.5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#60000000,endColorStr=#60000000);
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:10px 0;
+	}
+	
+.slide .slide-hd{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.slide .slide-hd ul{
+	float:right;
+	padding:0 5px;
+	}
+.slide .slide-hd li{
+	float:left;
+	cursor:pointer;
+	width:160px;
+	height:41px;
+	color:#eee;
+	overflow:hidden;
+	border:2px solid rgba(255,255,255,.5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#60ffffff,endColorStr=#60ffffff);
+	border-right:0;
+	}
+.slide .slide-hd li:last-child{
+	border-right:2px solid rgba(255,255,255,.5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#60ffffff,endColorStr=#60ffffff);
+	}
+.slide .slide-hd li img{
+	width:80px;
+	height:41px;
+	display:inline-block;
+	}
+.slide .slide-hd li span{
+	text-align:center;
+	margin:3px 5px;
+	}
+.slide .slide-hd ul .on{
+	background-color:#300;
+	}
+</style>
+
+<body>
+
+
+<div class="left-contrl">
+    <ul class="tab" id="tab">
+        <li class="active" data-anchor="preview">preview</li>
+        <li data-anchor="html">html</li>
+        <li data-anchor="css">css</li>
+        <li data-anchor="js">js</li>
+    </ul>
+    <form class="form-filter" action="">
+    <div class="form-item">
+    <label for="">屏幕：</label>
+        <select name="" id="column">
+            <option value="0">全屏</option>
+            <option value="1">1000屏</option>
+            
+        </select>
+    </div>
+    
+    
+    </form>
+</div>
+<!--------->
+<div class="right-content">
+	<div id="preview">
+        <div class="slide slide-full" id="slide">
+        
+            <div class="slide-bd">
+                <ul>
+                    <li><a href="#" style=" background:url(img/11.jpg) center no-repeat;">1</a></li>
+                    <li><a href="#" style=" background:url(img/12.jpg) center no-repeat;">2</a></li>
+                    <li><a href="#" style=" background:url(img/13.jpg) center no-repeat;">3</a></li>
+                    <li><a href="#" style=" background:url(img/14.jpg) center no-repeat;">4</a></li>
+                </ul>
+            </div>
+            
+            <div class="slide-bg">
+            
+                <div class="slide-hd">
+                    <ul class="clearfix">
+                        <li class="ellipsis" title="巴厘岛巴厘岛巴厘岛巴厘岛"><img src="img/11.jpg"><span>巴厘岛巴厘岛巴厘岛巴厘岛</span></li>
+                        <li class="ellipsis" title="骑行骑行骑行骑行骑行骑行"><img src="img/12.jpg"><span>骑行骑行骑行骑行骑行骑行</span></li>
+                        <li class="ellipsis" title="东南亚东南亚东南亚东南亚"><img src="img/13.jpg"><span>东南亚东南亚东南亚东南亚</span></li>
+                        <li class="ellipsis" title="泰国泰国泰国泰国泰国泰国"><img src="img/14.jpg"><span>泰国泰国泰国泰国泰国泰国</span></li>
+                    </ul>
+                </div>
+                
+            </div>
+        
+        </div>
+    </div>
+    
+    <div id="html" class="hide">
+    	<textarea cols="100" rows="25" class="code">
+        <div class="slide slide-full" id="slide">
+        
+            <div class="slide-bd">
+                <ul>
+                    <li><a href="#" style=" background:url(img/11.jpg) center no-repeat;">1</a></li>
+                    <li><a href="#" style=" background:url(img/12.jpg) center no-repeat;">2</a></li>
+                    <li><a href="#" style=" background:url(img/13.jpg) center no-repeat;">3</a></li>
+                    <li><a href="#" style=" background:url(img/14.jpg) center no-repeat;">4</a></li>
+                </ul>
+            </div>
+            
+            <div class="slide-bg">
+            
+                <div class="slide-hd">
+                    <ul class="clearfix">
+                        <li class="ellipsis" title="巴厘岛巴厘岛巴厘岛巴厘岛"><img src="img/11.jpg"><span>巴厘岛巴厘岛巴厘岛巴厘岛</span></li>
+                        <li class="ellipsis" title="骑行骑行骑行骑行骑行骑行"><img src="img/12.jpg"><span>骑行骑行骑行骑行骑行骑行</span></li>
+                        <li class="ellipsis" title="东南亚东南亚东南亚东南亚"><img src="img/13.jpg"><span>东南亚东南亚东南亚东南亚</span></li>
+                        <li class="ellipsis" title="泰国泰国泰国泰国泰国泰国"><img src="img/14.jpg"><span>泰国泰国泰国泰国泰国泰国</span></li>
+                    </ul>
+                </div>
+                
+            </div>
+        
+        </div>
+
+
+        </textarea>	
+    </div>
+    
+    <div id="css" class="hide">
+		<textarea cols="100" rows="25" class="code">
+.slide{
+	width:1000px;
+	height:460px;
+	overflow:hidden;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+.slide .slide-bd{
+	position:relative;
+	}
+.slide .slide-bd ul{
+	width:100%;
+	}
+.slide .slide-bd li{
+	width:100%;
+	height:460px;
+	}
+.slide .slide-bd ul li a{
+	width:100%;
+	height:460px;
+	display:block;
+	}
+	
+.slide .slide-bg{
+	width:100%;
+	background-color:rgba(0,0,0,.5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#60000000,endColorStr=#60000000);
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:10px 0;
+	}
+	
+.slide .slide-hd{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.slide .slide-hd ul{
+	float:right;
+	padding:0 5px;
+	}
+.slide .slide-hd li{
+	float:left;
+	cursor:pointer;
+	width:160px;
+	height:41px;
+	color:#eee;
+	overflow:hidden;
+	border:2px solid rgba(255,255,255,.5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#60ffffff,endColorStr=#60ffffff);
+	border-right:0;
+	}
+.slide .slide-hd li:last-child{
+	border-right:2px solid rgba(255,255,255,.5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#60ffffff,endColorStr=#60ffffff);
+	}
+.slide .slide-hd li img{
+	width:80px;
+	height:41px;
+	display:inline-block;
+	}
+.slide .slide-hd li span{
+	text-align:center;
+	margin:3px 5px;
+	}
+.slide .slide-hd ul .on{
+	background-color:#300;
+	}
+
+		</textarea>		
+	</div>
+    
+    <div id="js" class="hide">
+		<textarea cols="100" rows="25" class="code">
+        
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+	jQuery("#slide").slide({ titCell:".slide-hd li", mainCell:".slide-bd ul", effect:"fold",  autoPlay:true, delayTime:700 });
+</script>
+
+		</textarea>	
+	</div>
+</div>
+</body>
+
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+	jQuery("#slide").slide({ titCell:".slide-hd li", mainCell:".slide-bd ul", effect:"fold",  autoPlay:true, delayTime:700 });
+</script>
+
+<script>
+$(function(){
+	var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+	$('.aside-left').height(clientHeight-40);
+	var tab = $('#tab'),
+		tabItm = tab.find('li');
+	tabItm.on('click',function(){
+		var anchor = $(this).attr('data-anchor');
+		$(this).addClass('active').siblings().removeClass('active');
+		$('#'+anchor).show().siblings().hide();
+	});
+/*------*/
+	var ele = $("#slide");
+	var pos = ele.offset().top;
+
+	var sec = function(index){
+		if(index == 0){
+			return 0;
+		}else{
+			return $(".section-" + index).offset().top - 2*$("#slide").height() + $(".section-" + index).height();
+		}
+	}
+	
+	var direction = function(d){
+		if(d == 1){
+			$("#slide").removeClass("slide-full");
+			/*$("#nav_box").addClass("vertical");*/
+		}else{
+			$("#slide").addClass("slide-full");
+		}
+	};
+	$("#column").change(function(){
+		var d = $("#column").val();
+		console.log(d);
+		direction(d);
+	});
+	
+	})
+</script>
+</html>

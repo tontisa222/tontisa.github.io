@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>幻灯片07</title>
+
+<link href="../../static/style/reset.css" rel="stylesheet">
+<link href="css/slide-public.css" rel="stylesheet">
+</head>
+
+<style type="text/css">
+
+.slide{
+	width:994px;
+	height:460px;
+	border:3px solid #d9d9d9;
+	position:relative;
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+
+.slide #pic{
+	width:100%;
+	height:460px;
+	overflow:hidden;
+	}
+.slide #pic ul{
+	width:100%;
+	height:460px;
+	float:left;
+	}
+.slide #pic li{
+	width:100%;
+	height:460px;
+	float:left; 
+	position:relative;
+	}
+.slide #pic li p{ 
+	width:100%; 
+	height:40px; 
+	line-height:40px; 
+	position:absolute; 
+	left:0; 
+	bottom:21px; 
+	background-color:rgba(51,51,51,.6); 
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#60333333,endColorStr=#60333333);
+	color:#fff; 
+	font-size:16px; 
+	padding:0 5px;
+	}
+
+.slide #pic li a{
+	width:100%;
+	height:460px;
+	float:left; 
+	display:block;
+	}
+.slide .tip-bg{
+	width:100%;
+	height:21px;
+	background:url(img/focus_tip_bg.png) left top;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:12;
+	}
+.slide #tip{
+	width:96px;
+	height:14px;
+	position:absolute;
+	left:50%; 
+	margin-left:-48px;
+	bottom:3px;
+	z-index:13;
+	}
+.slide #tip ul li{
+	width:14px;
+	height:14px;
+	float:left;
+	display:inline;
+	margin:0 5px;
+	cursor:pointer;
+	background:url(img/focus_tip.png) no-repeat;
+	}
+.slide #tip ul li.on{
+	background:url(img/focus_tip_current.png) no-repeat;
+	}
+.slide .btn{
+	width:42px;
+	height:9px;
+	position:absolute;
+	right:0;
+	bottom:5px;
+	z-index:14;
+	overflow:hidden;
+	}
+.slide .btn ul{
+	width:100%;
+	float:left;
+	}
+.slide .btn li{
+	width:7px;
+	height:9px;
+	float:left;
+	display:inline;
+	margin:0 7px;
+	cursor:pointer;
+	overflow:hidden;
+	}
+.slide .btn li.prev{
+	background:url(img/focus_btn_left.png) no-repeat left top;
+	}
+.slide .btn li.next{
+	background:url(img/focus_btn_right.png) no-repeat left top;
+	}
+
+</style>
+
+
+
+<body>
+
+<div class="left-contrl">
+    <ul class="tab" id="tab">
+        <li class="active" data-anchor="preview">preview</li>
+        <li data-anchor="html">html</li>
+        <li data-anchor="css">css</li>
+        <li data-anchor="js">js</li>
+    </ul>
+    <form class="form-filter" action="">
+    <div class="form-item">
+    <label for="">屏幕：</label>
+        <select name="" id="column">
+            <option value="0">全屏</option>
+            <option value="1">1000屏</option>
+            
+        </select>
+    </div>
+    
+    
+    </form>
+</div>
+<!--------->
+<div class="right-content">
+	<div id="preview">
+        <div class="slide slide-full" id="slide" style="margin:0 auto">
+            <div id="pic">
+                <ul>
+                    <li><a href="#" target="_blank" style=" background:url(img/11.jpg) center center no-repeat;"></a><p>11111111111111111111111</p> </li>
+                    <li><a href="#" target="_blank" style=" background:url(img/12.jpg) center center no-repeat;"></a><p>22222222222222222222222</p> </li>
+                    <li><a href="#" target="_blank" style=" background:url(img/13.jpg) center center no-repeat;"></a><p>33333333333333333333333</p> </li>
+                    <li><a href="#" target="_blank" style=" background:url(img/14.jpg) center center no-repeat;"></a><p>44444444444444444444444</p> </li>
+                </ul>
+            </div>
+            <div class="tip-bg"></div>
+            <div id="tip">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <ul>
+                    <li class="prev" id="focus_btn_left"></li>
+                    <li class="next" id="focus_btn_right"></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="html" class="hide">
+    	<textarea cols="100" rows="25" class="code">
+        <div class="slide slide-full" id="slide" style="margin:0 auto">
+            <div id="pic">
+                <ul>
+                    <li><a href="#" target="_blank" style=" background:url(img/11.jpg) center center no-repeat;"></a><p>11111111111111111111111</p> </li>
+                    <li><a href="#" target="_blank" style=" background:url(img/12.jpg) center center no-repeat;"></a><p>22222222222222222222222</p> </li>
+                    <li><a href="#" target="_blank" style=" background:url(img/13.jpg) center center no-repeat;"></a><p>33333333333333333333333</p> </li>
+                    <li><a href="#" target="_blank" style=" background:url(img/14.jpg) center center no-repeat;"></a><p>44444444444444444444444</p> </li>
+                </ul>
+            </div>
+            <div class="tip-bg"></div>
+            <div id="tip">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <ul>
+                    <li class="prev" id="focus_btn_left"></li>
+                    <li class="next" id="focus_btn_right"></li>
+                </ul>
+            </div>
+        </div>
+
+
+        </textarea>	
+    </div>
+    
+    <div id="css" class="hide">
+		<textarea cols="100" rows="25" class="code">
+.slide{
+	width:994px;
+	height:460px;
+	border:3px solid #d9d9d9;
+	position:relative;
+	}
+.slide-full{ 
+	width:100%; 
+	min-width:1000px;
+	}
+
+.slide #pic{
+	width:100%;
+	height:460px;
+	overflow:hidden;
+	}
+.slide #pic ul{
+	width:100%;
+	height:460px;
+	float:left;
+	}
+.slide #pic li{
+	width:100%;
+	height:460px;
+	float:left; 
+	position:relative;
+	}
+.slide #pic li p{ 
+	width:100%; 
+	height:40px; 
+	line-height:40px; 
+	position:absolute; 
+	left:0; 
+	bottom:21px; 
+	background-color:rgba(51,51,51,.6); 
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#60333333,endColorStr=#60333333);
+	color:#fff; 
+	font-size:16px; 
+	padding:0 5px;
+	}
+
+.slide #pic li a{
+	width:100%;
+	height:460px;
+	float:left; 
+	display:block;
+	}
+.slide .tip-bg{
+	width:100%;
+	height:21px;
+	background:url(img/focus_tip_bg.png) left top;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:12;
+	}
+.slide #tip{
+	width:96px;
+	height:14px;
+	position:absolute;
+	left:50%; 
+	margin-left:-48px;
+	bottom:3px;
+	z-index:13;
+	}
+.slide #tip ul li{
+	width:14px;
+	height:14px;
+	float:left;
+	display:inline;
+	margin:0 5px;
+	cursor:pointer;
+	background:url(img/focus_tip.png) no-repeat;
+	}
+.slide #tip ul li.on{
+	background:url(img/focus_tip_current.png) no-repeat;
+	}
+.slide .btn{
+	width:42px;
+	height:9px;
+	position:absolute;
+	right:0;
+	bottom:5px;
+	z-index:14;
+	overflow:hidden;
+	}
+.slide .btn ul{
+	width:100%;
+	float:left;
+	}
+.slide .btn li{
+	width:7px;
+	height:9px;
+	float:left;
+	display:inline;
+	margin:0 7px;
+	cursor:pointer;
+	overflow:hidden;
+	}
+.slide .btn li.prev{
+	background:url(img/focus_btn_left.png) no-repeat left top;
+	}
+.slide .btn li.next{
+	background:url(img/focus_btn_right.png) no-repeat left top;
+	}
+
+		</textarea>		
+	</div>
+    
+    <div id="js" class="hide">
+		<textarea cols="100" rows="25" class="code">
+        
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+
+<script type="text/javascript">
+	jQuery(".slide").slide({ titCell:"#tip li", mainCell:"#pic ul",effect:"left",autoPlay:true,delayTime:200 });
+</script>
+
+
+		</textarea>	
+	</div>
+</div>
+
+</body>
+
+<script src="../../static/lib/jquery-1.8.3.min.js"></script>
+<script src="../../static/lib/jquery.SuperSlide.2.1.1.js"></script>
+
+<script type="text/javascript">
+	jQuery(".slide").slide({ titCell:"#tip li", mainCell:"#pic ul",effect:"left",autoPlay:true,delayTime:200 });
+</script>
+
+<script>
+$(function(){
+	var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+	$('.aside-left').height(clientHeight-40);
+	var tab = $('#tab'),
+		tabItm = tab.find('li');
+	tabItm.on('click',function(){
+		var anchor = $(this).attr('data-anchor');
+		$(this).addClass('active').siblings().removeClass('active');
+		$('#'+anchor).show().siblings().hide();
+	});
+/*------*/
+	var ele = $("#slide");
+	var pos = ele.offset().top;
+
+	var sec = function(index){
+		if(index == 0){
+			return 0;
+		}else{
+			return $(".section-" + index).offset().top - 2*$("#slide").height() + $(".section-" + index).height();
+		}
+	}
+	
+	var direction = function(d){
+		if(d == 1){
+			$("#slide").removeClass("slide-full");
+			/*$("#nav_box").addClass("vertical");*/
+		}else{
+			$("#slide").addClass("slide-full");
+		}
+	};
+	$("#column").change(function(){
+		var d = $("#column").val();
+		console.log(d);
+		direction(d);
+	});
+	
+	})
+</script>
+
+</html>
