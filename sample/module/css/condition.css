@@ -1,17 +1,17 @@
-.condition-groups{
+.m-condition{
 	width: 980px;
 	padding: 10px;
 	margin:0 auto;
 	border: 1px solid #ccc;
 }
-.condition-content{
+.condition-cont{
 	width: 980px;
 	height: 30px;
 	padding:10px 0;
 	border-bottom: 1px dotted #ccc;
 	overflow: hidden;
 }
-.condition-content:last-child{
+.condition-cont:last-child{
 	border-bottom: none;
 }
 .condition-hd{
@@ -98,7 +98,7 @@ a.show-more{
 a.show-less{
 	display: none;
 }
-.triange-bottom{
+.trgl-bottom{
 	float: right;
 	margin:12px 0 0 5px;
 	width: 0;
@@ -107,7 +107,7 @@ a.show-less{
 	border-style: solid;
 	border-color: #333 transparent transparent transparent;
 }
-.triange-top{
+.trgl-top{
 	float: right;
 	margin:8px 0 0 5px;
 	width: 0;

@@ -1,0 +1,29 @@
+.slogan{
+	width: 100%;
+	height: 240px;
+	background-image: url(../img/slogan.png);
+	background-position: center center; 
+}
+.slogan-title{
+	font-family: "Microsoft YaHei";
+	font-size: 36px;
+	padding-top: 60px;
+    line-height: 2em;
+    letter-spacing: 3px;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+}
+.slogan-content{
+	width: 405px;
+	margin:0 auto;
+	text-align: center;
+}
+.slogan-content li{
+	list-style-type: disc;
+	list-style-position: inside;
+	float: left;
+	color: #fff;
+	font-size: 14px;
+	margin: 0 15px;
+}

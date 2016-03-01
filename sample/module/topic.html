@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>主题活动 topic</title>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link href="/css/iframe.css" rel="stylesheet">
+<link href="css/topic.css" rel="stylesheet">
+</head> 
+<body>
+<div class="aside-left">
+	<ul class="tab" id="tab">
+		<li class="active" data-anchor="preview">preview</li>
+		<li data-anchor="html">html</li>
+		<li data-anchor="css">css</li>
+		<li data-anchor="js">js</li>
+	</ul>
+	<form class="form-filter" action="">
+		
+	</form>
+	
+</div>
+<div class="container">
+	<!--预览-->
+	<div id="preview" class="m-topic">
+		<div class="open">
+			<div class="ad">
+				<a href="#"></a>
+				<img src="img/ad.png" alt="">
+				<div class="btn-close">
+					<a href="#">
+					<img src="img/btn_close.png" alt="close">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="close">
+			<a href="#">
+				<img src="img/ad2.png" alt="open">
+			</a>
+		</div>
+	</div>
+	<!--/预览-->
+
+	<!--html document-->
+	<div id="html" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+<div id="preview" class="m-topic">
+		<div class="open">
+			<div class="ad">
+				<a href="#"></a>
+				<img src="img/ad.png" alt="">
+				<div class="btn-close">
+					<a href="#">
+					<img src="img/btn_close.png" alt="close">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="close">
+			<a href="#">
+				<img src="img/ad2.png" alt="open">
+			</a>
+		</div>
+	</div>
+		</textarea>	
+	</div>
+	<!--/html document-->
+
+	<!--css document-->
+	<div id="css" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+.aside-left{
+	z-index: 99;
+}
+.container{
+	z-index: 1;
+}
+.m-topic .open{
+	position: fixed;
+	left: 240px;
+	bottom: 0;
+	width: 100%;
+	height: 140px;
+	background-color: rgba(0,0,0,.5);
+}
+.ad{
+	width: 1000px;
+	height: 140px;
+	position: relative;
+	margin:0 auto;
+	z-index: 1;
+}
+.ad > a{
+	display: block;
+	width: 670px;
+	height: 140px;
+	position: relative;
+	left: 100px;
+	z-index: 9;
+}
+.ad > img{
+	display: block;
+	width: 1000px;
+	height: 195px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.btn-close{
+	display: block;
+	width: 39px;
+	height: 39px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 10;
+}
+.btn-close > a > img{
+	display: block;
+	width: 39px;
+	height: 39px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.btn-close > a:hover > img{
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+.m-topic .close{
+	width: 110px;
+	height: 110px;
+	position: fixed;
+	bottom: 0;
+	left: -120px;
+	z-index: 3;
+}
+.m-topic .close img{
+	display: block;
+	width: 110px;
+}
+		</textarea>		
+	</div>
+	<!--/css document-->
+
+	<!--js document-->
+	<div id="js" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+$(".btn-close").click(function(){
+		$(".open").animate({left:"-120%",queue:true}, 500);
+		$(".close").animate({left:"240px",queue:true}, 500);
+	});
+	$(".close").click(function(){
+		$(this).animate({left:"-120px",queue:true}, 500);
+		$(".open").animate({left:"240px",queue:true}, 500);
+	});
+		</textarea>	
+	</div>
+	<!--/js document-->
+</div>
+
+
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script src="/js/iframe.js"></script>
+<script>
+$(function(){
+	$(".btn-close").click(function(){
+		$(".open").animate({left:"-120%",queue:true}, 500);
+		$(".close").animate({left:"240px",queue:true}, 500);
+	});
+	$(".close").click(function(){
+		$(this).animate({left:"-120px",queue:true}, 500);
+		$(".open").animate({left:"240px",queue:true}, 500);
+	});
+})
+</script>
+</body>
+</html>

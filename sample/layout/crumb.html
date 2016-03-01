@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>面包屑导航 crumb</title>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link href="/css/iframe.css" rel="stylesheet">
+<link href="css/crumb.css" rel="stylesheet">
+</head> 
+<body>
+<div class="aside-left">
+	<ul class="tab" id="tab">
+		<li class="active" data-anchor="preview">preview</li>
+		<li data-anchor="html">html</li>
+		<li data-anchor="css">css</li>
+		<li data-anchor="js">js</li>
+	</ul>
+	
+</div>
+<div class="container">
+	<!--预览-->
+	<div id="preview">
+		<div class="breadcrumb clearfix">
+			<a href="#">首页</a>
+			<em>&gt;&gt;</em>
+			<a href="#">普吉岛</a>
+			<em>&gt;&gt;</em>
+			<span>普吉岛5日游</span>
+		</div>
+	</div>
+	<!--/预览-->
+
+	<!--html document-->
+	<div id="html" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+<div class="breadcrumb clearfix">
+			<a href="#">首页</a>
+			<em>&gt;&gt;</em>
+			<a href="#">普吉岛</a>
+			<em>&gt;&gt;</em>
+			<span>普吉岛5日游</span>
+		</div>
+		</textarea>	
+	</div>
+	<!--/html document-->
+
+	<!--css document-->
+	<div id="css" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+.breadcrumb{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	text-align: left;
+	color: #999;
+	background-color: #fff;
+}
+.breadcrumb em{
+	font-family: "宋体";
+	margin:0 5px;
+}
+.breadcrumb span{
+	color: #50b400;
+	padding: 3px 5px;
+    border: 1px dotted #ddd;
+}
+		</textarea>		
+	</div>
+	<!--/css document-->
+
+	<!--js document-->
+	<div id="js" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+		</textarea>	
+	</div>
+	<!--/js document-->
+</div>
+
+
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script src="/js/iframe.js"></script>
+
+</body>
+</html>

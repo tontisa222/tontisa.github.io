@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>文章详情 article_info</title>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link href="/css/iframe.css" rel="stylesheet">
+<link href="css/article_info.css" rel="stylesheet">
+</head> 
+<body>
+<div class="aside-left">
+	<ul class="tab" id="tab">
+		<li class="active" data-anchor="preview">preview</li>
+		<li data-anchor="html">html</li>
+		<li data-anchor="css">css</li>
+		<li data-anchor="js">js</li>
+	</ul>
+	<form class="form-filter" action="">
+		<div class="form-item">
+		<label for="">列表列数：</label>
+			<select name="" id="column">
+				<option value="3">3列</option>
+				<option value="1">1列</option>
+				<option value="2">2列</option>
+				<option value="4">4列</option>
+				<option value="5">5列</option>
+				<option value="6">6列</option>
+			</select>
+		</div>
+		<div class="form-item">
+			<label for="">图片宽高比例：</label>
+			<select name="" id="picScale">
+				<option value="10/16">16:10</option>
+				<option value="9/16">16:9</option>
+				<option value="3/4">4:3</option>
+				<option value="1/3">3:1</option>
+				<option value="1/2">2:1</option>
+				<option value="1">1:1</option>
+			</select>
+		</div>
+		<div class="form-item">
+			<label for="">列表项间距：</label>
+			<input type="text" id="spacing" value="20" placeholder="请输入列表项间距">
+		</div>
+		<div class="form-item">
+			<label for="">列表项内间距：</label>
+			<input type="text" id="padding" value="0" placeholder="请输入列表项内间距">
+		</div>
+		<div class="form-item">
+			<label for="">容器总宽度：</label>
+			<input type="text" id="fullWidth" value="1000" placeholder="请输入容器总宽度：">
+		</div>
+	</form>
+	<div class="abstract">
+		<p>1.此图文列表拓展性较强，可根据实际开发要求进行调整</p>
+	</div>
+</div>
+<div class="container">
+	<!--预览-->
+	<div id="preview">
+		<div class="article">
+			<div class="head">
+				<h3 class="title">国际机票市场“钱景”无限 引四方博弈</h3>
+				<div class="info">
+					<div class="share"><div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1456112083695"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div></div>
+					<span class="time"><i class="icon16 icon16-time"></i>2016-2-22</span>
+					<span class="scan"><i class="icon16 icon16-scan"></i>浏览（0）</span>
+					<a class="zan"><i class="icon16 icon16-zan"></i>赞（0）</a>
+				</div>
+			</div>
+			<div class="body">
+				<div class="body-pic">
+					<img src="img/img.jpg" alt="">
+				</div>
+				<div class="body-text">
+					<p>随着中国出境旅游的蓬勃发展，我国的国际机票市场迅速起量。看到了如此大好“钱景”的国内航空公司、OTA（在线旅游公司）以及传统代理人自然不肯错过这新机遇，航企们纷纷“提直降代”密集开通国际航线，各大OTA持续争夺国际机票流量入口，而风光不再的传统代理人也试图借机转身。与此同时，众多创业公司纷纷涌入，行业格局正在发生剧烈变化。</p>
+					<p>随着中国出境旅游的蓬勃发展，我国的国际机票市场迅速起量。看到了如此大好“钱景”的国内航空公司、OTA（在线旅游公司）以及传统代理人自然不肯错过这新机遇，航企们纷纷“提直降代”密集开通国际航线，各大OTA持续争夺国际机票流量入口，而风光不再的传统代理人也试图借机转身。与此同时，众多创业公司纷纷涌入，行业格局正在发生剧烈变化。</p>
+					<p>随着中国出境旅游的蓬勃发展，我国的国际机票市场迅速起量。看到了如此大好“钱景”的国内航空公司、OTA（在线旅游公司）以及传统代理人自然不肯错过这新机遇，航企们纷纷“提直降代”密集开通国际航线，各大OTA持续争夺国际机票流量入口，而风光不再的传统代理人也试图借机转身。与此同时，众多创业公司纷纷涌入，行业格局正在发生剧烈变化。</p>
+					<p>随着中国出境旅游的蓬勃发展，我国的国际机票市场迅速起量。看到了如此大好“钱景”的国内航空公司、OTA（在线旅游公司）以及传统代理人自然不肯错过这新机遇，航企们纷纷“提直降代”密集开通国际航线，各大OTA持续争夺国际机票流量入口，而风光不再的传统代理人也试图借机转身。与此同时，众多创业公司纷纷涌入，行业格局正在发生剧烈变化。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/预览-->
+
+	<!--html document-->
+	<div id="html" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+<div class="article">
+			<div class="head">
+				<h3 class="title">国际机票市场“钱景”无限 引四方博弈</h3>
+				<div class="info">
+					<div class="share"><div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1456112083695"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div></div>
+					<span class="time"><i class="icon16 icon16-time"></i>2016-2-22</span>
+					<span class="scan"><i class="icon16 icon16-scan"></i>浏览（0）</span>
+					<a class="zan"><i class="icon16 icon16-zan"></i>赞（0）</a>
+				</div>
+			</div>
+			<div class="body">
+				<div class="body-pic">
+					<img src="img/img.jpg" alt="">
+				</div>
+				<div class="body-text">
+					<p>随着中国出境旅游的蓬勃发展，我国的国际机票市场迅速起量。看到了如此大好“钱景”的国内航空公司、OTA（在线旅游公司）以及传统代理人自然不肯错过这新机遇，航企们纷纷“提直降代”密集开通国际航线，各大OTA持续争夺国际机票流量入口，而风光不再的传统代理人也试图借机转身。与此同时，众多创业公司纷纷涌入，行业格局正在发生剧烈变化。</p>
+					<p>随着中国出境旅游的蓬勃发展，我国的国际机票市场迅速起量。看到了如此大好“钱景”的国内航空公司、OTA（在线旅游公司）以及传统代理人自然不肯错过这新机遇，航企们纷纷“提直降代”密集开通国际航线，各大OTA持续争夺国际机票流量入口，而风光不再的传统代理人也试图借机转身。与此同时，众多创业公司纷纷涌入，行业格局正在发生剧烈变化。</p>
+					<p>随着中国出境旅游的蓬勃发展，我国的国际机票市场迅速起量。看到了如此大好“钱景”的国内航空公司、OTA（在线旅游公司）以及传统代理人自然不肯错过这新机遇，航企们纷纷“提直降代”密集开通国际航线，各大OTA持续争夺国际机票流量入口，而风光不再的传统代理人也试图借机转身。与此同时，众多创业公司纷纷涌入，行业格局正在发生剧烈变化。</p>
+					<p>随着中国出境旅游的蓬勃发展，我国的国际机票市场迅速起量。看到了如此大好“钱景”的国内航空公司、OTA（在线旅游公司）以及传统代理人自然不肯错过这新机遇，航企们纷纷“提直降代”密集开通国际航线，各大OTA持续争夺国际机票流量入口，而风光不再的传统代理人也试图借机转身。与此同时，众多创业公司纷纷涌入，行业格局正在发生剧烈变化。</p>
+				</div>
+			</div>
+		</div>
+		</textarea>	
+	</div>
+	<!--/html document-->
+
+	<!--css document-->
+	<div id="css" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+.article{
+	width:958px;
+	padding: 20px;
+	margin:0 auto;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.article .head{
+	border-bottom: 1px solid #ddd;
+}
+.article .head h3{
+	font-size: 18px;
+	line-height: 40px;
+}
+.article .head .info{
+	height: 30px;
+	line-height: 30px;
+}
+.article .head .info .share{
+	float: right;
+}
+.time,.zan,.scan{
+	font-size: 12px;
+	color: #333;
+	margin-right: 10px;
+}
+.icon16{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 3px;
+	background-image: url(../img/icon_bbs.png);
+	background-repeat: no-repeat;
+	vertical-align: text-top;
+}
+.icon16-time{
+	background-position: 0 0;
+}
+.icon16-zan{
+	background-position: 0 -32px;
+}
+.icon16-scan{
+	background-position: 0 -16px;
+}
+.zan:hover .icon16-zan{
+	background-position: 0 -48px;
+}
+.body-pic{
+	text-align: center;
+	margin:30px 0;
+}
+.body-text{
+	font-size: 14px;
+	line-height: 24px;
+}
+.body-text p{
+	text-indent: 2em;
+	margin:10px 0;
+}
+		</textarea>		
+	</div>
+	<!--/css document-->
+
+	<!--js document-->
+	<div id="js" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+		</textarea>	
+	</div>
+	<!--/js document-->
+</div>
+
+
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script src="/js/iframe.js"></script>
+
+<!-- baidu share -->
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+</body>
+</html>

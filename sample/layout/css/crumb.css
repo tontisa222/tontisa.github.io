@@ -1,0 +1,17 @@
+.breadcrumb{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	text-align: left;
+	color: #999;
+	background-color: #fff;
+}
+.breadcrumb em{
+	font-family: "宋体";
+	margin:0 5px;
+}
+.breadcrumb span{
+	color: #50b400;
+	padding: 3px 5px;
+    border: 1px dotted #ddd;
+}

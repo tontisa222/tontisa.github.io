@@ -1,4 +1,4 @@
-.abstract{
+.wrap{
 	width: 958px;
 	height: 340px;
 	border: 1px solid #ddd;
@@ -6,12 +6,12 @@
 	margin:0 auto;
 	padding: 0 20px 20px 20px;
 }
-.line-title{
+.wrap .head{
 	line-height: 60px;
 	margin-bottom:20px;
 	border-bottom: 1px solid #ddd;
 }
-.line-title .btn-download{
+.head .btn-download{
 	float: right;
 	width: 120px;
 	height: 36px;
@@ -23,10 +23,10 @@
 	font-size: 16px;
 	color: #fff;
 }
-.line-title .btn-download:hover{
+.head .btn-download:hover{
 	background-color: #f06000;
 }
-.line-title .btn-download .icon-download{
+.head .btn-download .icon-download{
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -34,19 +34,19 @@
 	background-repeat: no-repeat;
 	vertical-align: middle;
 }
-.line-title h3{
+.head h3{
 	font-size: 24px;
 }
-.side-pic{
+.wrap .side{
 	width: 450px;
 	height: 260px;
 }
-.side-pic img{
+.side img{
 	display: block;
 	width:450px;
 	height: 260px;
 }
-.line-summary{
+.wrap .body{
 	width: 490px;
 	height: 260px;
 }
@@ -80,21 +80,21 @@
 .price .btn-book:hover{
 	background-color: #027EBD;
 }
-.line-summary .info{
+.body .info{
 	width: 490px;
 	height: 168px;
 }
-.line-summary .price{
+.body .price{
 	height: 50px;
 	line-height: 50px;
 	font-size: 16px;
 	border-bottom: 1px dotted #ddd;
 }
-.line-summary .price strong{
+.body .price strong{
 	font-size: 24px;
 	color: #f60;
 }
-.line-summary .share{
+.body .share{
 	padding-top:10px; 
 }
 .share .server{

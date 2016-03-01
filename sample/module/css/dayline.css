@@ -1,0 +1,119 @@
+
+.m-dayline{
+	position: relative;
+	width: 958px;
+	margin:0 auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+.m-dayline .process{
+	position: fixed;
+	left: 513px;      /*这里按需要设置*/
+	top: 50px;       /*这里按需要设置*/
+}
+
+.m-dayline .day{
+	position: relative;
+	margin-bottom: 20px;
+}
+.process .list-icon{
+	margin-bottom: 10px;
+	display: block;
+}
+.m-dayline .time{
+	position: relative;
+	display: block;
+	color: #fff;
+	width: 60px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	background-color: #f90;
+	border-radius: 3px 0 0 3px;
+}
+.m-dayline .process a.time{
+	margin-bottom: 10px;
+}
+.m-dayline .process a.time:hover{
+	color: #fff;
+}
+.m-dayline .time-absolute{
+	position: absolute;
+    left: -80px;
+    top: 10px;
+}
+.m-dayline .time-fixed{
+	position: fixed;
+	left: 30px;
+	top: 30px;
+}
+.m-dayline .time:after{
+	content: "";
+	position: absolute;
+	right: -24px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-width: 12px;
+	border-style: dashed dashed dashed solid;
+	border-color:transparent transparent transparent #f90;
+}
+.m-dayline .day .title{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.m-dayline .day .info{
+	font-size: 14px;
+	line-height: 2em;
+	background-color: #eee;
+	padding: 10px;
+}
+.ico18{
+	display: inline-block;
+	width:18px;
+	height: 18px;
+	margin-right: 5px;
+	background-image: url(../img/icon_trip.png);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.ico18-food{
+	background-position: 0 0;
+}
+.ico18-hotel{
+	background-position: 0 -18px;
+}
+.ico18-triffic{
+	background-position: 0 -36px;
+}
+.ico18-flight{
+	background-position: 0 -72px;
+}
+.m-dayline .day .text{
+	font-size: 12px;
+	line-height: 1.5em;
+	text-indent: 2em;
+	width: 940px;
+	margin:0 auto;
+	padding: 10px;
+}
+.m-dayline .day .img{
+	width: 960px;
+	margin:0 auto;
+}
+.m-dayline .day .img li{
+	float: left;
+	width:299px;
+	margin-right: 10px;
+    margin-bottom: 10px;
+	border: 1px solid #ddd;
+}
+.m-dayline .day .img li img{
+	display: block;
+	width: 289px;
+	height: 180px;
+	padding:5px;
+	border: none;
+}

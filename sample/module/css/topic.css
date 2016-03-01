@@ -1,0 +1,73 @@
+.aside-left{
+	z-index: 99;
+}
+.container{
+	z-index: 1;
+}
+.m-topic .open{
+	position: fixed;
+	left: 240px;
+	bottom: 0;
+	width: 100%;
+	height: 140px;
+	background-color: rgba(0,0,0,.5);
+}
+.ad{
+	width: 1000px;
+	height: 140px;
+	position: relative;
+	margin:0 auto;
+	z-index: 1;
+}
+.ad > a{
+	display: block;
+	width: 670px;
+	height: 140px;
+	position: relative;
+	left: 100px;
+	z-index: 9;
+}
+.ad > img{
+	display: block;
+	width: 1000px;
+	height: 195px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.btn-close{
+	display: block;
+	width: 39px;
+	height: 39px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 10;
+}
+.btn-close > a > img{
+	display: block;
+	width: 39px;
+	height: 39px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.btn-close > a:hover > img{
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+.m-topic .close{
+	width: 110px;
+	height: 110px;
+	position: fixed;
+	bottom: 0;
+	left: -120px;
+	z-index: 3;
+}
+.m-topic .close img{
+	display: block;
+	width: 110px;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>底部 footer</title>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link href="/css/iframe.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+</head> 
+<body>
+<div class="aside-left">
+	<ul class="tab" id="tab">
+		<li class="active" data-anchor="preview">preview</li>
+		<li data-anchor="html">html</li>
+		<li data-anchor="css">css</li>
+		<li data-anchor="js">js</li>
+	</ul>
+	
+</div>
+<div class="container">
+	<!--预览-->
+	<div id="preview">
+		<div class="footer">
+			<div class="footer-guide">
+				<div class="in clearfix">
+					<dl class="about-us ">
+					  <dt class="ico-about">关于我们</dt>
+						<dd><a href="#">关于我们</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+						<dd><a href="#">常用景点</a></dd>
+						<dd><a href="#">常用酒店</a></dd>
+					</dl>
+					<dl class="friendly-link ">
+					  <dt class="ico-link">友情链接</dt>
+						<dd><a href="#">同天下官网</a></dd>
+						<dd><a href="#">同天下官网</a></dd>
+						<dd><a href="#">同天下官网</a></dd>
+						<dd><a href="#">同天下官网</a></dd>
+					</dl>
+					<dl class="hot-tel ">
+					  <dt class="ico-tel">客服热线</dt>
+						<dd>
+							<h3>0755-32984426</h3>
+							<p>企业传真：0755-32984426<br>地址：深圳市龙岗区力嘉路108号2013文化创客园A312-314<br>技术支持：<a target="_blank" href="http://www.op110.com">同天下</a></p>
+						</dd>
+						
+					</dl>
+					<dl class="weixin ">
+					  <dt class="ico-weixin">微信扫一扫</dt>
+						<dd>
+							<img src="img/qr.gif" alt="weixin">
+						</dd>
+						
+					</dl>
+				</div>
+			</div>
+
+			<div class="copyright">
+				深圳同天下UI 版权所有© tontisa.github.io <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备13025331号</a> &nbsp;
+			</div>
+		</div>
+	</div>
+	<!--/预览-->
+
+	<!--html document-->
+	<div id="html" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+<div class="footer">
+			<div class="footer-guide">
+				<div class="in clearfix">
+					<dl class="about-us ">
+					  <dt class="ico-about">关于我们</dt>
+						<dd><a href="#">关于我们</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+						<dd><a href="#">常用景点</a></dd>
+						<dd><a href="#">常用酒店</a></dd>
+					</dl>
+					<dl class="friendly-link ">
+					  <dt class="ico-link">友情链接</dt>
+						<dd><a href="#">同天下官网</a></dd>
+						<dd><a href="#">同天下官网</a></dd>
+						<dd><a href="#">同天下官网</a></dd>
+						<dd><a href="#">同天下官网</a></dd>
+					</dl>
+					<dl class="hot-tel ">
+					  <dt class="ico-tel">客服热线</dt>
+						<dd>
+							<h3>0755-32984426</h3>
+							<p>企业传真：0755-32984426<br>地址：深圳市龙岗区力嘉路108号2013文化创客园A312-314<br>技术支持：<a target="_blank" href="http://www.op110.com">同天下</a></p>
+						</dd>
+						
+					</dl>
+					<dl class="weixin ">
+					  <dt class="ico-weixin">微信扫一扫</dt>
+						<dd>
+							<img src="img/qr.gif" alt="weixin">
+						</dd>
+						
+					</dl>
+				</div>
+			</div>
+
+			<div class="copyright">
+				深圳同天下UI 版权所有© tontisa.github.io <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备13025331号</a> &nbsp;
+			</div>
+		</div>
+		</textarea>	
+	</div>
+	<!--/html document-->
+
+	<!--css document-->
+	<div id="css" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+.footer{
+	background-color: #333;
+}
+.footer-guide{
+	padding: 20px 0;
+	border-bottom: 1px solid #242424;
+}
+.footer-guide .in{
+	width: 1000px;
+	margin: 0 auto;
+}
+.footer-guide dl{
+	float: left;
+	color: #666;
+	min-height: 150px;
+	background: url(../img/line-bg.png) no-repeat 9px 15px;
+}
+.about-us,.friendly-link{
+	width: 220px;
+}
+.hot-tel{
+	width: 230px;
+}
+.weixin{
+	width: 180px;
+}
+.footer-guide dl dt{
+	font-size: 14px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+.footer-guide dl dd{
+	padding-left: 20px;
+	line-height: 20px;
+}
+.hot-tel dd h3{
+	font-size: 24px;
+	margin: 5px 0;
+	font-weight: normal;
+	color: orange;
+}
+.ico-about{
+	background-image: url(../img/icon-about.png);
+	background-repeat: no-repeat;
+}
+.ico-link{
+	background-image: url(../img/icon-link.png);
+	background-repeat: no-repeat;
+}
+.ico-tel{
+	background-image: url(../img/icon-contact.png);
+	background-repeat: no-repeat;
+}
+.ico-weixin{
+	background-image: url(../img/icon-wechat.png);
+	background-repeat: no-repeat;
+}
+
+.copyright{
+	height: 30px;
+	line-height: 30px;
+	border-top: 1px solid #3D3D3D;
+	color: #666;
+	text-align: center;
+}
+		</textarea>		
+	</div>
+	<!--/css document-->
+
+	<!--js document-->
+	<div id="js" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+		</textarea>	
+	</div>
+	<!--/js document-->
+</div>
+
+
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script src="/js/iframe.js"></script>
+
+</body>
+</html>

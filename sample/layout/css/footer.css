@@ -1,0 +1,65 @@
+.footer{
+	background-color: #333;
+}
+.footer-guide{
+	padding: 20px 0;
+	border-bottom: 1px solid #242424;
+}
+.footer-guide .in{
+	width: 1000px;
+	margin: 0 auto;
+}
+.footer-guide dl{
+	float: left;
+	color: #666;
+	min-height: 150px;
+	background: url(../img/line-bg.png) no-repeat 9px 15px;
+}
+.about-us,.friendly-link{
+	width: 220px;
+}
+.hot-tel{
+	width: 230px;
+}
+.weixin{
+	width: 180px;
+}
+.footer-guide dl dt{
+	font-size: 14px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+.footer-guide dl dd{
+	padding-left: 20px;
+	line-height: 20px;
+}
+.hot-tel dd h3{
+	font-size: 24px;
+	margin: 5px 0;
+	font-weight: normal;
+	color: orange;
+}
+.ico-about{
+	background-image: url(../img/icon-about.png);
+	background-repeat: no-repeat;
+}
+.ico-link{
+	background-image: url(../img/icon-link.png);
+	background-repeat: no-repeat;
+}
+.ico-tel{
+	background-image: url(../img/icon-contact.png);
+	background-repeat: no-repeat;
+}
+.ico-weixin{
+	background-image: url(../img/icon-wechat.png);
+	background-repeat: no-repeat;
+}
+
+.copyright{
+	height: 30px;
+	line-height: 30px;
+	border-top: 1px solid #3D3D3D;
+	color: #666;
+	text-align: center;
+}
