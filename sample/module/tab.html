@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>选项卡</title>
+</head>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link href="css/slide-public.css" rel="stylesheet">
+<body>
+
+<div class="left-contrl">
+    <ul class="tab" id="tab">
+        <li class="active" data-anchor="preview">preview</li>
+        <li data-anchor="html">html</li>
+        <li data-anchor="css">css</li>
+        <li data-anchor="js">js</li>
+    </ul>
+    <form class="form-filter" action="">
+        
+        <div class="form-item" id="effect">
+        <label for="">效果：</label>
+            <select name="effect">
+                <option value="fade" selected>fade</option>
+				<option value="fold">fold</option>
+				<option value="left">left</option>
+				<option value="top">top</option>
+				<option value="leftLoop">leftLoop</option>
+				<option value="topLoop">topLoop</option> 
+            </select>
+            <label for="">自动运行：</label>
+            <select name="autoPlay">
+				<option value="false">false</option>
+				<option value="true">true</option>
+			</select>
+			<label for="">触发方式：</label>
+			<select rel="string" name="trigger">
+				<option value="mouseover">mouseover</option>
+				<option value="click">click</option>
+			</select>
+			<label for="">缓动效果：</label>
+			<select rel="string" name="easing" style="width:110px;">						
+				<option value="swing">swing</option>
+				<option value="easeOutCirc">easeOutCirc</option>
+				<option value="easeInQuint">easeInQuint</option>
+				<option value="easeInBack">easeInBack</option>
+				<option value="easeOutBounce">easeOutBounce</option>
+				<option value="easeOutElastic">easeOutElastic</option>
+			</select>
+        </div>
+    
+    </form>
+</div>
+
+
+<div class="right-content">
+
+	<div id="preview">
+    
+    	<iframe allowTransparency="true" scrolling="no" _src="tab_iframe.html?" frameborder="0" style="width:460px;height:240px;"></iframe>
+    
+    </div>
+
+    <div id="html" class="hide">
+    	<textarea cols="100" rows="25" class="code">
+<div class="slideTxtBox">
+	<div class="hd">
+		<ul><li>教育</li><li>培训</li><li>出国</li></ul>
+	</div>
+	<div class="bd">
+		<ul>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">学英语送ipad2,45天突破听说</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">学外语，上北外！</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">那些无法理解的荒唐事</a></li>
+		</ul>
+		<ul>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">名师教作文：３妙招巧写高分</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">耶鲁小子：教你备考SAT</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">施强：高端专业语言教学</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">【推荐】名校英语方法曝光！</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">2012高考“考点”大曝光!!</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">涨价仍爆棚假日旅游冰火两重天</a></li>
+		</ul>
+		<ul>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">澳大利亚八大名校招生说明会</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">2012世界大学排名新鲜出炉</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">新加坡留学，国际双语课程</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">高考后留学日本名校随你选</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">教育培训行业优势资源推介</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">即刻预约今年最后一场教育展</a></li>
+			<li><span class="date">2011-11-11</span><a href="http://www.SuperSlide2.com" target="_blank">女友坚持警局完婚不抛弃</a></li>
+		</ul>
+	</div>
+</div>
+        </textarea>
+    </div>
+
+    <div id="css" class="hide">
+    	<textarea cols="100" rows="25" class="code">
+.slideTxtBox{ width:450px; border:1px solid #ddd; text-align:left;  }
+.slideTxtBox .hd{ height:30px; line-height:30px; background:#f4f4f4; padding:0 10px 0 20px;   border-bottom:1px solid #ddd;  position:relative; }
+.slideTxtBox .hd ul{ float:left; position:absolute; left:20px; top:-1px; height:32px;   }
+.slideTxtBox .hd ul li{ float:left; padding:0 15px; cursor:pointer;  }
+.slideTxtBox .hd ul li.on{ height:30px;  background:#fff; border:1px solid #ddd; border-bottom:2px solid #fff; }
+.slideTxtBox .bd ul{ padding:15px;  zoom:1;  }
+.slideTxtBox .bd li{ height:24px; line-height:24px;   }
+.slideTxtBox .bd li .date{ float:right; color:#999;  }
+        </textarea>
+    </div>
+    
+    <div id="js" class="hide">
+    	<textarea cols="100" rows="25" class="code">
+jQuery(".slideTxtBox").slide( { effect:ary[1],autoPlay:ary[2],trigger:ary[3],easing:ary[4]});
+
+ary[1],ary[2],ary[3],ary[4]分别为左边select所传参数的值
+        </textarea>
+    </div>
+</div>
+
+</body>
+
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script src="/static/lib/jquery.SuperSlide.2.1.1.js"></script>
+<script src="/js/iframe.js"></script>
+
+<script>
+$(function(){
+
+	var iframe = $('iframe');
+	$("select").change(function(){
+
+		 var srcStr="";
+
+		 $("select").each(function(){
+			srcStr += "&"+$(this).val();
+		 });
+
+		 iframe.attr("src",iframe.attr("src").split('&')[0]+srcStr);
+	});
+	iframe.attr("src",iframe.attr("_src") ).removeAttr("_src");
+})
+</script>
+
+</html>

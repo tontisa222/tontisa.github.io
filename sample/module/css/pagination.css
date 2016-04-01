@@ -1,0 +1,37 @@
+/*分页*/
+.pagination{
+    padding: 5px;
+    background-color: #fff;
+}
+.pages {
+    height: 24px;
+    text-align: center;
+    font-family: Arial;
+    margin: 20px 0;
+}
+.pages span, .pages a {
+    display: inline-block;
+    padding: 0 8px;
+    border-radius: 2px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 1px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #ccc;
+}
+.pages span input{
+	height: 18px;
+    width: 30px;
+    border: none;
+}
+
+.pages .prev, .pages .next {
+    font-family: '宋体';
+}
+.pages-gray a.active {
+    text-shadow: 0px 1px 0px #ccc;
+    color: #fff;
+    background-color: #2497f0;
+}

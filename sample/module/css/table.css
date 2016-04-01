@@ -1,0 +1,30 @@
+.table{
+	width: 1000px;
+	margin:0 auto;
+	table-layout: auto;
+}
+.table-wrap .table th{
+	color: #fff;
+	background-color: #090;
+}
+.table td{
+	line-height: 25px;
+}
+td span.status{
+	display: block;
+}
+td span.default{
+	color: #fff;
+	background-color: #090;
+}
+td span.disabled{
+	color: #888;
+	background-color: #eee;
+}
+.table td a{
+	display: block;
+}
+.table td a:hover{
+	color: #fff;
+	background-color: #f60;
+}

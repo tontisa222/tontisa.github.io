@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>评论 comment</title>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link href="/css/iframe.css" rel="stylesheet">
+<link href="css/comment.css" rel="stylesheet">
+</head> 
+<body>
+<div class="aside-left">
+	<ul class="tab" id="tab">
+		<li class="active" data-anchor="preview">preview</li>
+		<li data-anchor="html">html</li>
+		<li data-anchor="css">css</li>
+		<li data-anchor="js">js</li>
+	</ul>
+	
+</div>
+<div class="container">
+	<!--预览-->
+	<div id="preview">
+		<div class="comment-box">
+			<h3><i class="ico16 ico-msg"></i> 发表您的评论</h3>
+			<form action="#">
+				<textarea class="comment-txt" name="comment" id="" rows="4" placeholder="说点什么吧..."></textarea>
+				<div class="comment-publish">
+					<a href="#" class="comment-submit">提交评论</a>
+				</div>
+			</form>
+			<div class="comment-record">
+				<h4><strong>1</strong>条评论</h4>
+				<dl class="comment-record-item clearfix">
+					<dt>
+						<img src="img/heade_default.jpg" alt="" width="48" height="48">
+					</dt>
+					<dd>
+						<p class="comment-user">
+							<span class="comment-user-name">张三：</span>
+							从今天起要么努力追逐梦想，要么就做别人脚底的泥巴
+						</p>
+						<p class="comment-time">
+							<i class="ico16 ico-time"></i> 
+							2016年03月07日 14:09
+						</p>
+					</dd>
+				</dl>
+				<dl class="comment-record-item clearfix">
+					<dt>
+						<img src="img/heade_default.jpg" alt="" width="48" height="48">
+					</dt>
+					<dd>
+						<p class="comment-user">
+							<span class="comment-user-name">张三：</span>
+							从今天起要么努力追逐梦想，要么就做别人脚底的泥巴
+						</p>
+						<p class="comment-time">
+							<i class="ico16 ico-time"></i> 
+							2016年03月07日 14:09
+						</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<!--/预览-->
+
+	<!--html document-->
+	<div id="html" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+<div class="comment-box">
+			<h3><i class="ico16 ico-msg"></i> 发表您的评论</h3>
+			<form action="#">
+				<\textarea class="comment-txt" name="comment" id="" rows="4" placeholder="说点什么吧..."><\/textarea>
+				<div class="comment-publish">
+					<a href="#" class="comment-submit">提交评论</a>
+				</div>
+			</form>
+			<div class="comment-record">
+				<h4><strong>1</strong>条评论</h4>
+				<dl class="comment-record-item clearfix">
+					<dt>
+						<img src="img/heade_default.jpg" alt="" width="48" height="48">
+					</dt>
+					<dd>
+						<p class="comment-user">
+							<span class="comment-user-name">张三：</span>
+							从今天起要么努力追逐梦想，要么就做别人脚底的泥巴
+						</p>
+						<p class="comment-time">
+							<i class="ico16 ico-time"></i> 
+							2016年03月07日 14:09
+						</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		</textarea>	
+	</div>
+	<!--/html document-->
+
+	<!--css document-->
+	<div id="css" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+.comment-box{
+	width: 960px;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.comment-box h3{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.ico16{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	background-image: url(../img/icon_bbs.png);
+	background-repeat:no-repeat;
+}
+.ico-msg{
+	background-position: 0 -64px;
+}
+.comment-txt{
+	display: block;
+	width: 948px;
+	margin:0 auto;
+	padding: 5px;
+	line-height: 18px;
+	border: 1px solid #ddd;
+	background-color: #f8f8f8;
+	font-size: 14px;
+	-webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    transition: all linear .2s;
+    resize: none;
+    overflow: auto;
+    vertical-align: top;
+}
+.comment-txt:focus{
+	border-color:#79B5E4;
+	border-color: rgba(82,168,236,0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	background-color:#fff; 
+}
+.comment-publish{
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: right;
+}
+.comment-submit{
+	display: inline-block;
+	padding: 3px 10px;
+	color: #fff;
+	text-align: center;
+	background-color: #0CA500;
+	border:1px solid #0A8500;
+	border-radius: 2px;
+}
+.comment-record h4{
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	border-bottom: 1px solid #ddd;
+	color: #404040;
+}
+.comment-record h4 strong{
+	font-size: 20px;
+	color: #50b400;
+}
+.comment-record-item dt{
+	float: left;
+	width: 48px;
+	height: 48px;
+	padding: 1px;
+	border: 1px solid #ddd;
+}
+.comment-record-item dd{
+	position: relative;
+    z-index: 10;
+    margin-left: 70px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    color: #666;
+    line-height: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.comment-record .comment-record-item dd:after{
+	content: "";
+	position: absolute;
+	left: -18px;
+	top: 20px;
+	width: 0;
+	height: 0;
+	border-width: 9px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #f8f8f8 transparent transparent;
+    font-size: 0;
+    line-height: 0;
+}
+.comment-record .comment-record-item dd:before{
+	content: "";
+    position: absolute;
+    left: -20px;
+    top: 19px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #ddd transparent transparent;
+    font-size: 0;
+    line-height: 0;
+}
+.comment-record .comment-record-item .comment-time{
+	padding-top: 5px; 
+}
+.ico-time{
+	background-position: 0 0;
+	vertical-align: text-bottom;
+}
+		</textarea>		
+	</div>
+	<!--/css document-->
+
+	<!--js document-->
+	<div id="js" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+		</textarea>	
+	</div>
+	<!--/js document-->
+</div>
+
+
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script src="/js/iframe.js"></script>
+<script>
+
+</script>
+</body>
+</html>

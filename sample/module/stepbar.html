@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>进度状态条 stepbar</title>
+<link href="/static/style/reset.css" rel="stylesheet">
+<link href="/css/iframe.css" rel="stylesheet">
+<link href="css/stepbar.css" rel="stylesheet">
+</head> 
+<body>
+<div class="aside-left">
+	<ul class="tab" id="tab">
+		<li class="active" data-anchor="preview">preview</li>
+		<li data-anchor="html">html</li>
+		<li data-anchor="css">css</li>
+		<li data-anchor="js">js</li>
+	</ul>
+	<form class="form-filter" action="">
+		<div class="form-item">
+		<label for="">列表列数：</label>
+			<select name="" id="column">
+				<option value="3">3列</option>
+				<option value="1">1列</option>
+				<option value="2">2列</option>
+				<option value="4">4列</option>
+				<option value="5">5列</option>
+				<option value="6">6列</option>
+			</select>
+		</div>
+		<div class="form-item">
+			<label for="">图片宽高比例：</label>
+			<select name="" id="picScale">
+				<option value="10/16">16:10</option>
+				<option value="9/16">16:9</option>
+				<option value="3/4">4:3</option>
+				<option value="1/3">3:1</option>
+				<option value="1/2">2:1</option>
+				<option value="1">1:1</option>
+			</select>
+		</div>
+		<div class="form-item">
+			<label for="">列表项间距：</label>
+			<input type="text" id="spacing" value="20" placeholder="请输入列表项间距">
+		</div>
+		<div class="form-item">
+			<label for="">列表项内间距：</label>
+			<input type="text" id="padding" value="0" placeholder="请输入列表项内间距">
+		</div>
+		<div class="form-item">
+			<label for="">容器总宽度：</label>
+			<input type="text" id="fullWidth" value="1000" placeholder="请输入容器总宽度：">
+		</div>
+	</form>
+	<div class="abstract">
+		<p>1.此图文列表拓展性较强，可根据实际开发要求进行调整</p>
+	</div>
+</div>
+<div class="container">
+	<!--预览-->
+	<div id="preview">
+		<div class="stepbar">
+			<ul class="stepbar-box clearfix">
+				<li class="step active">
+					<div class="step-box">
+						<h3>步骤一</h3>
+						<i class="step-dot"></i>
+					</div>
+				</li>
+				<li class="step active">
+					<div class="step-box">
+						<h3>步骤二</h3>
+						<i class="step-dot"></i>
+					</div>
+				</li>
+				<li class="step">
+					<div class="step-box">
+						<h3>步骤三</h3>
+						<i class="step-dot"></i>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--/预览-->
+
+	<!--html document-->
+	<div id="html" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+<div class="stepbar">
+			<ul class="stepbar-box clearfix">
+				<li class="step active">
+					<div class="step-box">
+						<h3>步骤一</h3>
+						<i class="step-dot"></i>
+					</div>
+				</li>
+				<li class="step active">
+					<div class="step-box">
+						<h3>步骤二</h3>
+						<i class="step-dot"></i>
+					</div>
+				</li>
+				<li class="step">
+					<div class="step-box">
+						<h3>步骤三</h3>
+						<i class="step-dot"></i>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</textarea>	
+	</div>
+	<!--/html document-->
+
+	<!--css document-->
+	<div id="css" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+.stepbar{
+	width: 900px;
+	padding: 20px;
+	margin:0 auto;
+	border: 1px solid #ddd;
+}
+.stepbar-box{
+	margin-top: 20px;
+	background-color: #F5F5F5;
+}
+.stepbar-box .step{
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 10px;
+	background-color: #CAECB6;
+	color: #B0E491;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.step .step-box{
+	position: absolute;
+	width: 60px;
+	top: 0;right: 0;bottom: 0;left: 0;
+	margin:auto;
+	margin-top: -26px;
+}
+.step-box h3{
+	text-align: center;
+}
+.step-dot{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin:0 auto;
+	border-radius: 100%;
+	background-color: #CAECB6;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.stepbar-box .active{
+	background-color: #579A30;
+	color: #316D0E;
+}
+.active .step-box .step-dot{
+	background-color: #579A30;
+}
+		</textarea>		
+	</div>
+	<!--/css document-->
+
+	<!--js document-->
+	<div id="js" class="hide">
+		<textarea cols="100" rows="25" class="doc-code">
+var step = $(".step");
+		step.click(function(){
+			var index = $(this).index();
+			var len = step.length;
+			for(var i = 0;i < len;i++){
+				if(i <= index){
+					$(step[i]).addClass('active');
+				}else{
+					$(step[i]).removeClass('active');
+				}
+				
+			}
+		});
+		</textarea>	
+	</div>
+	<!--/js document-->
+</div>
+
+
+<script src="/static/lib/jquery-1.8.3.min.js"></script>
+<script src="/js/iframe.js"></script>
+<script>
+	$(function(){
+		var step = $(".step");
+		step.click(function(){
+			var index = $(this).index();
+			var len = step.length;
+			for(var i = 0;i < len;i++){
+				if(i <= index){
+					$(step[i]).addClass('active');
+				}else{
+					$(step[i]).removeClass('active');
+				}
+				
+			}
+		});
+	})
+</script>
+</body>
+</html>

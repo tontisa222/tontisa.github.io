@@ -1,0 +1,51 @@
+.stepbar{
+	width: 900px;
+	padding: 20px;
+	margin:0 auto;
+	border: 1px solid #ddd;
+}
+.stepbar-box{
+	margin-top: 20px;
+	background-color: #F5F5F5;
+}
+.stepbar-box .step{
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 10px;
+	background-color: #CAECB6;
+	color: #B0E491;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.step .step-box{
+	position: absolute;
+	width: 60px;
+	top: 0;right: 0;bottom: 0;left: 0;
+	margin:auto;
+	margin-top: -26px;
+}
+.step-box h3{
+	text-align: center;
+}
+.step-dot{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin:0 auto;
+	border-radius: 100%;
+	background-color: #CAECB6;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.stepbar-box .active{
+	background-color: #579A30;
+	color: #316D0E;
+}
+.active .step-box .step-dot{
+	background-color: #579A30;
+}

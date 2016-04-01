@@ -22,7 +22,7 @@
 	color: #fff;
 	padding: 0 10px;
 }
-.mnav .mnav-item > a:hover{
+.mnav .mnav-item:hover > a{
 	background-color:#fff;
 	color: #000;
 }
@@ -54,6 +54,13 @@
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
-.mnav-item > a:hover .icon-trgl{
+.mnav-item:hover > a .icon-trgl{
 	background-position: 0 -6px;
 }
+/*.mnav .mnav-item > a.hover{
+	background-color:#fff;
+	color: #000;
+}
+.mnav-item > a.hover .icon-trgl{
+	background-position: 0 -6px;
+}*/
